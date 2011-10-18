@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+.body{width:1010px;  overflow:hidden; margin:0 auto; padding:0;font:  Arial, "宋体";}
+
+.left315{
+	width:315px;
+	float:left;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	display: block;
+}
+.right280{width:280px; float:right; overflow:hidden; margin:0; padding:0}
+
+.content-cse{
+	overflow:hidden;	
+	padding:8px 0;
+	width: 708px;	
+}
+.content-cse ul{ list-style:none outside none; font-size:12px; font-weight:bold; padding: 0; margin:0;  display:block}
+.content-cse ul li{ list-style:none outside none; display:inline; float:left; margin:0 0 6px 10px ; overflow:hidden }
+.content-cse ul li label{ cursor:pointer; display:block; margin:0 0 4px 0}
+#studycountry{ width:160px; vertical-align:middle}
+#studyarea{ width:160px; vertical-align:middle}
+#college{
+	width:350px;
+	vertical-align:middle
+}
+#degree{ width:160px; vertical-align:middle}
+#major{ width:160px; vertical-align:middle}
+
+
+.pingyin-cse{
+	border-top:1px dotted #DCDDDD;
+	overflow:hidden;
+	padding: 8px 0;
+	margin:0 8px;
+	font:bold 12px Arial, "宋体";
+	display: block;
+
+}
+.pingyin-cse a{font-size:15px; font-weight:bold; color:#C00; text-decoration:none;}
+.pingyin-cse a:hover{text-decoration:underline;}
+.submit{ float:right;	padding: 10px 8px 0 0;
+	height: 30px;
+
+	display:block;}
+.college-list{
+	overflow:hidden;
+	border:1px solid #DCDDDD;
+	margin:0 0 0px 0;
+	padding:0;background:url(../images/bgt3.gif) top repeat-x;
+}
+
+#explore-nav {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #CCC;
+	height: 26px;
+	
+}
+#explore-nav li {
+	width: 78px;
+	height:26px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style:none outside none;
+}
+#explore-nav li.last { margin-right: 0; }
+#explore-nav li a { display: block; padding: 5px; color: black; font-size: 14px; text-align: center; border: 0; text-decoration:none }
+#explore-nav li a:hover { background:url(../images/bgt3hover.gif) top repeat-x;  color:#FFF; border:1px solid #C00;}
+#explore-nav li a.current { background:url(../images/bgt3hover.gif) top repeat-x;  color:#FFF; border:1px solid #C00;}
+#ca, #uk, #au, #nz, #sg, #ie, #my, #nl{ display: none; }
+#us, #ca, #uk, #au, #nz, #sg, #ie, #my, #nl, ul{ list-style:none outside none; margin:0; padding:0}
+#us, #ca, #uk, #au, #nz, #sg, #ie, #my, #nl, ul li{
+	list-style:none outside none;
+	margin:0;
+	padding:0;
+	display:block
+}
+#ca, #uk, #au, #nz, #sg, #ie, #my, #nl{ display:none}
+.school_results_list_item{
+	overflow:hidden;
+	display:block;
+	margin:0 8px;
+	padding:6px 0 6px 0px;
+	border-bottom:1px dotted #CCC;
+	width: 692px;
+}
+.logocollege{
+	float:left;
+	border:1px solid  #CCC;
+}
+
+
+
+.school_results_content{
+	padding: 0;
+	margin:0 0 0 0;
+	float: right;
+	width: 504px;
+}
+.school_results_content ul { list-style:none outside none;padding:0 ; margin:0
+}
+.school_results_content li { list-style:none outside none; padding:0 5px 0 20px; margin:0; height:15px; display:inline
+}
+.school_results_content li a{ font-size:12px; color:#03C; text-decoration:underline
+}
+.app{ background:url(../images/app.gif) top left no-repeat}
+.ass{ background:url(../images/ass.gif) top left no-repeat}
+.pro{ background:url(../images/pro.gif) top left no-repeat}
+.fav{ background:url(../images/fav.gif) top left no-repeat}
+
+.container280{
+	
+	border:1px solid #DCDDDD;
+	margin:0 0 10px 0;
+	padding:0;
+	width:278px
+	
+}
+.container1010{
+	overflow:hidden;
+	border:1px solid #DCDDDD;
+	margin:0 0 10px 0;
+	padding:0;
+	width:1008px
+	
+}
+
+.container280 ul{
+	list-style:none outside none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+}
+.container280 li{
+	margin:0px;
+}
+.collegename{
+	padding:4px;
+	height: 90px;
+	width:128px;float: left;
+	
+}
+.collegeblog{
+	background:url(../images/greydot.gif) center left no-repeat;
+	padding-left: 8px;
+	padding-top: 4px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+}
+.collegeblog a{ font-size:14px; color:#333; text-decoration:none}
+.collegeblog a:hover{ color:#C00; text-decoration:underline}
+.topno{font-size:10px; color:white; padding:0 10px 0 4px; margin:auto 0 ; font-family:Arial}
+.topno10{font-size:10px; color:white; padding:0 10px 0 2px ; margin:auto 0; font-family:Arial}
+.top1-3{
+	padding-left: 0px;
+	padding: 2px ;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	background-image: url(../images/top1-3.gif);
+	background-repeat: no-repeat;
+	background-position: 2px 8px;
+}
+.top4-10{
+	padding-left: 0px;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	background-image: url(../images/top4-10.gif);
+	background-repeat: no-repeat;
+	background-position: 2px 6px;
+}
+.top1-3 a{ font-size:12px; color:#F30; text-decoration:none}
+.top1-3 a:hover{ text-decoration:underline}
+.top4-10 a{ font-size:12px; color:#333; text-decoration:none}
+.top4-10 a:hover{ color:#C00; text-decoration:underline}
+.topmajor{
+	/* [disabled]clear:both; */
+	/* [disabled]float:right; */
+	right:-1px;
+	width:86px;
+	height:79px;
+	top:-7px;
+	text-indent: -9999px;
+	/* [disabled]display:inline; */
+	/* [disabled]margin: -7px 0 0 -1px; */
+	z-index:2;
+	position: absolute;
+	background-image: url(../images/top_ribbon.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}

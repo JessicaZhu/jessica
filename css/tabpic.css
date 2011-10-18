@@ -1,0 +1,69 @@
+﻿/*********图片切换 css定义***********/
+.sub_box{
+	width:311px;
+	height:231px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	padding:1px;
+	border:1px solid #cccccc;
+	/* [disabled]background:url(http://trip.elong.com/trip/default/news/images/logo_gray.jpg) center center no-repeat; */
+
+
+
+
+*background:url(http://trip.elong.com/trip/default/news/images/logo_gray.jpg) 220px 120px no-repeat;}
+.sub_box img{border:none; width:311px; height:231px;}
+#bd1lfimg{
+	position:relative;
+	width:311px;
+	height:231px;
+	overflow:hidden;
+	margin: 0;
+	padding: 0;
+}
+#bd1lfimg div{width:100000px; margin-left:-4px;}
+#bd1lfimg dl{
+	width:311px;
+	height:231px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	margin: 0;
+	padding: 0;
+}
+#bd1lfimg dt{width:311px; height:231px; position:absolute; left:0px; top:0px}
+#bd1lfimg dd{
+	width:311px;
+	height:40px;
+	background:#000000;
+	filter:alpha(Opacity=70);
+	Opacity:0.7;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	padding:0 6px;
+	margin:0
+}
+#bd1lfimg dd a{color:#ffffff; text-decoration:none; font-weight:bold}
+#bd1lfimg dd a:hover{text-decoration:none; color:#cccccc;}
+#bd1lfimg dd tt{color:#dddddd; font-size:12px; padding:3px}
+#bd1lfimg dd tt a:hover{text-decoration:underline;}
+
+.sub_nav{
+	width:311px;
+	height:22px;
+	bottom:1px;
+	position:absolute;
+	color:#999999;
+	z-index:200;
+	padding-bottom:1px;
+	left: 1px;
+}
+.sub_no{height:20px; float:right; padding-right:2px;}
+.sub_no ul{	margin: 0; padding: 0;}
+.sub_no li{	margin: 0; padding: 0;display:block; width:20px; height:20px; float:left; overflow:hidden; line-height:20px; vertical-align:middle; text-align:center; background:#000000; filter:alpha(Opacity=90); Opacity:0.9; font-family:Arial; font-size:11px; color:#999999; cursor:pointer;}
+.sub_no li.show{background: #F30; color:#ffffff;}
+
+
+/*********图片切换 css定义***********/

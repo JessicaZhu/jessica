@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+#ns-nav {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	height: 31px;
+	float:left;	
+}
+#ns{  }
+#ns-nav li {
+	float:left;
+	padding:0;
+	margin:0;
+	list-style:none outside none;
+}
+#ukns  #cans  #auns  #nzns  #sgns  #iens{ display: none; }
+#helanns{ display: none; }
+#usns{   display:block}
+ #usns #ukns  #cans  #auns  #nzns  #sgns  #iens  #helanns ul{ list-style:none outside none; margin:0; padding:0;display: block;	overflow: hidden;}
+ #usns #ukns  #cans  #auns  #nzns  #sgns  #iens  #helanns ul li{
+	list-style:none outside none;
+	margin:0;
+	padding: 0;
+	/* [disabled]float: left; */
+	overflow: hidden;
+
+	
+}

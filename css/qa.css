@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+.recommended—specialist {
+	margin:0 0 5px 0;
+	font-size:12px;
+	padding: 0 5px;
+	overflow: hidden;
+	display: block;
+	width: 268px;
+}
+.recommended—specialist ul{ list-style:none outside none; padding:0; margin:0}
+.recommended—specialist ul li{
+	list-style:none outside none;
+	padding:5px 0 0 0;
+	margin:0;
+	display:block;
+	color: #666;
+	border-bottom: 1px dashed #DCDDDD;
+	overflow: hidden;
+	width: 270px;
+}
+.re-content{
+	font-size:12px;
+	height: 95px;
+}
+.re-name{ display:block; padding-bottom:5px}
+.re-name a{ color:#C00; font-weight:bold; text-decoration:none}
+.re-name a:hover{ text-decoration:underline;}
+.re-destination { display:block; padding-bottom:5px;color:#666; font-weight:bold; }
+.tcollegename{
+	width:124px;
+	font-size:12px;
+	text-align: center;
+}
+.tcollegename a{
+	font-size:12px;
+	color:#333;
+	line-height:18px;
+	text-decoration:none
+}
+.tcollegename a:hover{ color:#C00; text-decoration:underline
+}
+.collegename{
+	padding:4px;
+	height: 90px;
+	width:128px;float: left;
+	
+}
+.qa-nationsearch{
+	font-size:14px;
+	color:#666;
+	background:#F7F7F7;
+	border:1px solid #999;
+	margin-bottom: 10px;
+	padding: 6px 8px;
+	width: 700px;
+	line-height: 24px;
+}
+.qa-nationsearch a{ padding-right:5px; color:#666; text-decoration:none }
+.qa-nationsearch a:hover{ color:#C00; text-decoration:underline
+}
+.qa-list{
+	padding: 4px;
+	height:20px;
+	display:block;
+	font-size: 14px;
+}
+.qa-list-nation a{padding-right:5px; color:#666; text-decoration:none}
+.qa-list-content a{text-decoration:none; color:#36F}
+.qa-list-nation a:hover{text-decoration:underline}
+.qa-list-content a:hover{text-decoration:underline}
+.qa-list-student{
+	color:#999;
+	float:right;
+	width:100px;
+	display:block
+}
+.iq{ float:right; padding:6px 8px 0 0 }
+.myquestion{
+	padding: 6px;
+	overflow: hidden;
+	display: block;
+}
+.myquestions{
+	padding: 0 6px 6px 6px;
+	overflow: hidden;
+	display: block;
+	font-size: 12px;
+	color: #333;
+	font-weight: bold;
+}
+.myquestion ul{
+	padding:0;
+	margin:0;
+	list-style:none outside none;
+	overflow: hidden;
+	display: block;
+}
+.myquestion ul li{
+	padding:0;
+	margin:0 5px 5px 0;
+	list-style:none outside none;
+	font-size: 12px;
+	font-weight:bold;
+	color:#333;
+	display: block;
+	float: left;
+	height: 25px;
+	overflow: hidden;
+}
+.confirm{
+	float:left;
+	padding: 0;
+	height: 30px;
+	background:url(../images/confirm.gif) top center no-repeat;
+	width:96px;
+	display:block;
+	border: 0;
+	text-indent: -9999px;
+	margin: 0 5px 5px 75px;
+}
+.reset{
+	float:left;
+	padding: 0;
+	height: 30px;
+	background:url(../images/reset.gif) top center no-repeat;
+	width:96px;
+	display:block;																border: 0;
+	text-indent: -9999px;
+	margin: 0 5px 5px 5px;
+}
+.qnow{font-size:14px; padding:6px 8px; float:right; color:#09F; font-weight:bold}
+.qnow a{ color:#09F; font-weight:bold; text-decoration:none}
+.qnow a:hover{ text-decoration:underline}
+.qno{ color:#F90}

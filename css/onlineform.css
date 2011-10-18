@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document */
+
+.onlineform{
+	overflow:hidden;
+	/* [disabled]padding:8px 0; */
+	width: 660px;
+	display: block;
+	/* [disabled]float: left; */
+}
+.form2 {
+	overflow:hidden;
+	/* [disabled]padding:8px 0; */
+	width: 702px;
+	display: block;
+	margin: 3px 0;
+}
+.onlineform ul{
+	list-style:none outside none;
+	font-size:12px;
+	font-weight:bold;
+	padding: 0;
+	margin:0;
+	display:block;
+	overflow: hidden;
+}
+.onlineform ul li{
+	list-style:none outside none;
+	display:block;
+	/* [disabled]float:left; */
+	margin:0 0 6px 10px;
+	overflow:hidden;
+	/* [disabled]height: 20px; */
+}
+.onlineform ul li label{
+	cursor:pointer;
+	width:160px;
+	text-align:right;
+	padding:3px 0;
+	margin:0;
+	display: block;
+	float: left;
+}
+.tresult{
+	cursor:pointer;
+	width:160px;
+	text-align:right;
+	padding:3px 0;
+	margin:0;
+	display: block;
+	float: left;
+	font-weight: bold;
+	font-size: 12px;
+	margin-left: 10px;
+}
+#studycountry, #time, #birth, #city {
+	width:120px;
+	vertical-align:middle;
+}
+#name{
+	width:120px;
+	vertical-align:middle;
+	height:22px;
+	font-size:12px;
+	float:left
+}
+#tel{ width:185px; vertical-align:middle; height:20px; font-size:12px;}
+#email{ width:185px; vertical-align:middle; height:20px; font-size:12px; float:left}
+#QQ{
+	width:135px;
+	vertical-align:middle;
+	height:22px;
+	font-size:12px;
+	float:left;
+	margin-left:5px
+}
+.QQ{
+	vertical-align:middle;
+	font-size:12px;
+	float:left;
+	margin-left:5px;
+	padding-top: 3px;
+}
+#tender{
+	width:60px;
+	vertical-align:middle; margin-left:5px
+}
+.result{
+	float:left;
+	width:330px;
+	margin:0;
+	padding:0 0 0 0;
+	overflow: hidden;
+	display: block;
+	font-size: 12px;
+}
+.result ul{
+	margin:0;
+	padding:0;
+	list-style:none outside none;
+	overflow: hidden;
+}
+.result ul li{
+	margin:0 0 5px 0;
+	padding:0;
+	list-style:none outside none;
+	display: block;
+	/* [disabled]height: 25px; */
+	/* [disabled]width: 160px; */
+	float: left;
+	overflow: hidden;
+}
+.result ul li label{
+	cursor:pointer;
+	text-align:left;
+	padding:2px 0;
+	margin:0 0 3px 0;
+	display: block;
+	float: left;
+	color:#666;
+	font-weight:normal;
+	width:70px;
+	/* [disabled]height: 16px; */
+}
+#IELTS, #GRE, #TOFEL, #GMAT{
+	width:80px;
+	vertical-align:middle;
+	float:left;
+	height: 20px;
+	margin: 0 5px 3px 0;
+	/* [disabled]display: inline; */
+}
+#experience{ width:390px; vertical-align:middle; height:60px}
+
+
+
+.confirm{
+	float:left;
+	padding: 0;
+	height: 30px;
+	background:url(../images/confirm.gif) top center no-repeat;
+	width:96px;
+	display:block;																border: 0;
+	text-indent: -9999px;
+	margin: 0 5px 5px 170px;
+}
+.reset{
+	float:left;
+	padding: 0;
+	height: 30px;
+	background:url(../images/reset.gif) top center no-repeat;
+	width:96px;
+	display:block;																border: 0;
+	text-indent: -9999px;
+	margin: 0 5px 5px 5px;
+}
+.gn{
+	margin:9px 0;
+	font-size:12px;
+	padding: 0 5px;
+	overflow: hidden;
+	display: block;
+	border: 1px solid #F6F6F6;
+	border-top:none;
+	border-bottom:none;
+	width: 268px;
+}
+ .book{
+	margin:9px 0;
+	font-size:12px;
+	padding: 0 5px;
+	overflow: hidden;
+	display: block;
+	border: 1px solid #F6F6F6;
+	border-top:none;
+	border-bottom:none;
+	width: 268px;
+}
+.gn ul{ list-style:none outside none; padding:0; margin:0} 
+.book ul{ list-style:none outside none; padding:0; margin:0}
+.gn ul li{
+	list-style:none outside none;
+	padding:3px 0;
+	margin:0;
+	padding-left:18px;
+	height:18px;
+	display:block;
+	color: #000;
+	border-bottom: 1px dashed #DCDDDD;
+	background-image: url(../images/ico_gn.gif);
+	background-repeat: no-repeat;
+	background-position: left 3px;
+}
+.book ul li{
+	list-style:none outside none;
+	padding:3px 0;
+	margin:0;
+	padding-left:18px;
+	overflow:hidden;
+	
+	display:block;
+	color: #000;
+	border-bottom: 1px dashed #DCDDDD;
+	background-image: url(../images/ico_gn.gif);
+	background-repeat: no-repeat;
+	background-position: left 3px;
+}
+.authorlist{
+	margin:9px 0;
+	font-size:12px;
+	padding: 0 5px;
+	overflow: hidden;
+	display: block;
+border: 1px solid #F6F6F6;
+	border-top:none; border-bottom:none;width: 268px;
+}
+.authorlist ul{ list-style:none outside none; padding:0; margin:0}
+.authorlist ul li{
+	list-style:none outside none;
+	padding:3px 0;
+	margin:0;
+	display:block;
+	color: #666;
+	border-bottom: 1px dashed #DCDDDD;
+	overflow: hidden;
+	width: 268px;
+}
+
+.telau{
+	font-size:13px;
+	font-weight:bold;
+	display: block;
+	padding: 3px 0;
+}
+.aulist{display: block;
+	padding: 0 0 5px 0;
+	margin-left: 95px;}
+.tau{
+	font-size:16px;
+	font-weight:bold;
+	display: block;
+	padding-bottom: 5px;
+	
+}
+.tau a{ color: #666; text-decoration:none}
+.tau a:hover{ color:#C00; text-decoration:underline}
+.studentname{ color:#09F; padding-right:4px}
+.newstime{
+	color:#C3F;
+	padding:0 4px
+}
+.newsschool a{ color:#390; text-decoration:underline}

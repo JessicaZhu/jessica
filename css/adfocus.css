@@ -1,0 +1,77 @@
+﻿/*********图片切换 css定义***********/
+.sub_box{
+	width:311px;
+	height:450px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	/* [disabled]border:1px solid #cccccc; */
+	background:url(http://trip.elong.com/trip/default/news/images/logo_gray.jpg) center center no-repeat;
+
+*background:url(http://trip.elong.com/trip/default/news/images/logo_gray.jpg) 220px 120px no-repeat;				padding: 1px;
+	margin: 0;
+	padding:1px;
+}
+.sub_box img{border:none; width:663px; height:310px;}
+#bd1lfimg{
+	position:relative;
+	width:311px;
+	/* [disabled]height:310px; */
+	overflow:hidden;
+	margin: 0;
+	padding: 0;
+}
+#bd1lfimg div{width:100000px; margin-left:-4px;}
+#bd1lfimg dl{
+	width:311px;
+	height:450px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	margin: 0;
+	padding: 0;
+}
+#bd1lfimg dt{
+	width:311px;
+	height:310px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.dd{
+	font-size:14px;
+	font-weight:bold;
+	color:#4B5464;
+	width:100000px;
+	position:absolute;
+	left:0px;
+	top:312px;
+	z-index: 201;
+}
+
+.dd a{color:#4B5464; font-size:14px;text-decoration:none;padding:6px}
+.dd a:hover{text-decoration:underline; color:#4B5464;}
+.tt{
+	font-size:12px;
+	color:#333;
+	line-height:18px;
+}
+.tt a:hover{text-decoration:underline;}
+.tt a{color:#333;; font-size:12px;text-decoration:none; font-weight:normal; padding-top:8px }
+.sub_nav{
+	width:311px;
+	height:25px;
+	top:286px;
+	position:absolute;
+	color:#999999;
+	z-index:200;
+}
+.sub_no{height:25px; float:right;}
+.sub_no ul{ list-style:none outside none; margin:0; padding:0;}
+.sub_no li{display:block; width:25px; height:25px; float:left; overflow:hidden; line-height:25px; vertical-align:middle; text-align:center; background:#000000; font-family:Arial; font-size:11px; color:#999999; cursor:pointer;}
+.sub_no li.show{background:#ffffff; color:#000000;}
+.sub_more{float:right; width:50px; height:25px; background:#000000; filter:alpha(Opacity=70); Opacity:0.7; color:#999999; text-align:center; line-height:25px;}
+.sub_more a{color:#999999;}
+.sub_more a:hover{color:#cccccc; text-decoration:none;}
+
+/*********图片切换 css定义***********/

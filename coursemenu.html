@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>站酷（zcool）CSS+XHTML代码</title>
+</head>
+<style type="text/css">
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/drop_variations.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the assocaited (x)html may be modified in any 
+way to fit your requirements.
+
+由站酷(zcool)http://www.zcool.com.cn/ 整理 
+来源于：http://www.cssplay.co.uk
+=================================================================== */
+ /* common styling */
+
+ /* Set up the default font and ovrall size to include image */
+ body {
+	background: #fff;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+#lists {
+	padding:0 0 0 260px;
+	margin:0;
+	list-style:none;
+	position:relative;
+	height:36px;
+	float:left;
+	background:url(images/btn_bg.png) no-repeat;
+	/* [disabled]overflow:hidden; */
+	background-position:0 -101px;
+	width:710px;
+	z-index:540;
+} /* margins for this demonstration only */
+#lists li {
+	display:inline;
+	float:left;
+	;
+	height:26px;
+	background:#3C6BD0;
+	text-align: center;
+	padding: 5px 0;
+}
+#lists li a.tl {
+	display:block;
+	width:150px;
+	height:25px;
+	text-decoration:none;
+	line-height:20px;
+	font-size:16px;
+	font-weight:bold;
+	text-indent:10px;
+	font-weight:normal;
+	color:#FFF;
+	background-color: #3C6BD0;
+}
+
+#lists div {display:none;}
+
+#lists li a:hover {text-decoration:underline; white-space:normal; background-position:130px 15px;}
+#lists li:hover > a {text-decoration:underline; white-space:normal; background-position:130px 15px;}
+
+#lists :hover div
+{display:block; width:598px; background:#faebd7; position:absolute; left:0; top:25px; border:1px solid #888; padding-bottom:10px;}
+#lists :hover div.pos2 {background:#E6F2FF; width:300px}
+#lists :hover div.pos1 {background:#E6F2FF; width:300px}
+
+#lists .two:hover {position:relative;}
+#lists .single:hover {position:relative;}
+
+#lists .two:hover div.pos3 {background:#E6F2FF; width:300px}
+#lists .single:hover div.pos4 {background:#E6F2FF; width:300px;}
+
+#lists :hover div dl {display:inline; padding:0; margin:0 10px 10px 10px; float:left; width:129px;}
+#lists :hover div dl dt {width:129px; background:#888; text-indent:10px; margin:5px 0 10px 0; text-decoration:none; height:20px; line-height:20px;}
+
+#lists .two:hover div {left:-150px;}
+#lists .two:hover div dl {width:129px;}
+#lists .two:hover div dl dt {width:129px;}
+
+#lists .single:hover div dl {width:129px;}
+#lists .single:hover div dl dt {width:129px;}
+
+#lists :hover div dl dd {padding:0; margin:0;}
+
+#lists :hover div dt a {text-decoration:none; cursor:default; font-weight:normal; color:#fff;}
+#lists :hover div dd a {display:block; text-decoration:none; font-weight:normal; font-size:11px; color:#000; text-indent:10px; line-height:15px;}
+#lists :hover div dd a:hover {text-decoration:underline;}
+
+#lists .clear {clear:both;}
+.coursemenu{
+	background:url(images/btn_bg.png) no-repeat;
+	/* [disabled]overflow:hidden; */
+	background-position:0 -101px;
+}
+</style>
+<body>
+<div class="coursemenu">
+
+<ul id="lists">
+<li class="single"><a href="#" class="tl">本科课程</a><!--[if IE 7]><!--><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<div class="pos1">
+<dl>
+<dt><a href="#">Group one</a></dt>
+<dd><a href="#nogo">Alabama</a></dd>
+<dd><a href="#nogo">Alaska</a></dd>
+<dd><a href="#nogo">Arizona</a></dd>
+<dd><a href="#nogo">Arkansas</a></dd>
+<dd><a href="#nogo">California</a></dd>
+<dd><a href="#nogo">Colorado</a></dd>
+<dd><a href="#nogo">Connecticut</a></dd>
+<dd><a href="#nogo">D.C.</a></dd>
+</dl>
+<dl>
+<dt><a href="#nogo">Group two</a></dt>
+<dd><a href="#nogo">Delaware</a></dd>
+<dd><a href="#nogo">Florida</a></dd>
+<dd><a href="#nogo">Georgia</a></dd>
+<dd><a href="#nogo">Hawaii</a></dd>
+<dd><a href="#nogo">Idaho</a></dd>
+<dd><a href="#nogo">Illinois</a></dd>
+<dd><a href="#nogo">Indiana</a></dd>
+<dd><a href="#nogo">Iowa</a></dd>
+<dd><a href="#nogo">Kansas</a></dd>
+<dd><a href="#nogo">Kentucky</a></dd>
+</dl>
+<dl>
+<dt><a href="#nogo">Group three</a></dt>
+<dd><a href="#nogo">Louisiana</a></dd>
+<dd><a href="#nogo">Maine</a></dd>
+<dd><a href="#nogo">Maryland</a></dd>
+<dd><a href="#nogo">Massachusetts</a></dd>
+<dd><a href="#nogo">Michigan</a></dd>
+<dd><a href="#nogo">Minnesota</a></dd>
+<dd><a href="#nogo">Mississippi</a></dd>
+<dd><a href="#nogo">Missouri</a></dd>
+<dd><a href="#nogo">Montana</a></dd>
+</dl>
+<br class="clear" />
+<dl>
+<dt><a href="#nogo">Group four</a></dt>
+<dd><a href="#nogo">Nebraska</a></dd>
+<dd><a href="#nogo">Nevada</a></dd>
+<dd><a href="#nogo">New Hampshire</a></dd>
+<dd><a href="#nogo">New Jersey</a></dd>
+<dd><a href="#nogo">New Mexico</a></dd>
+<dd><a href="#nogo">New York</a></dd>
+<dd><a href="#nogo">North Carolina</a></dd>
+</dl>
+<dl>
+<dt><a href="#nogo">Group five</a></dt>
+<dd><a href="#nogo">North Dakota</a></dd>
+<dd><a href="#nogo">Ohio</a></dd>
+<dd><a href="#nogo">Oklahoma</a></dd>
+<dd><a href="#nogo">Oregon</a></dd>
+<dd><a href="#nogo">Pennsylvania</a></dd>
+<dd><a href="#nogo">Rhode Island</a></dd>
+<dd><a href="#nogo">South Carolina</a></dd>
+<dd><a href="#nogo">South Dakota</a></dd>
+</dl>
+<dl>
+<dt><a href="#nogo">Group six</a></dt>
+<dd><a href="#nogo">Tennessee</a></dd>
+<dd><a href="#nogo">Texas</a></dd>
+<dd><a href="#nogo">Utah</a></dd>
+<dd><a href="#nogo">Vermont</a></dd>
+<dd><a href="#nogo">Virginia</a></dd>
+<dd><a href="#nogo">Washington</a></dd>
+<dd><a href="#nogo">West Virginia</a></dd>
+<dd><a href="#nogo">Wisconsin</a></dd>
+<dd><a href="#nogo">Wyoming</a></dd>
+</dl>
+</div>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li class="single"><a href="#" class="tl">硕士课程</a><!--[if IE 7]><!--><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<div class="pos2">
+<dl>
+<dt><a href="#">Group one</a></dt>
+<dd><a href="#nogo">Aberdeenshire</a></dd>
+<dd><a href="#nogo">Anglesey</a></dd>
+<dd><a href="#nogo">Angus</a></dd>
+<dd><a href="#nogo">Antrim</a></dd>
+<dd><a href="#nogo">Argyllshire</a></dd>
+<dd><a href="#nogo">Armagh</a></dd>
+<dd><a href="#nogo">Ayrshire</a></dd>
+<dd><a href="#nogo">Banffshire</a></dd>
+</dl>
+<dl>
+<dt><a href="#nogo">Group two</a></dt>
+<dd><a href="#nogo">Bedfordshire</a></dd>
+<dd><a href="#nogo">Berkshire</a></dd>
+<dd><a href="#nogo">Berwickshire</a></dd>
+<dd><a href="#nogo">Brecknockshire</a></dd>
+<dd><a href="#nogo">Buckinghamshire</a></dd>
+<dd><a href="#nogo">Buteshire</a></dd>
+<dd><a href="#nogo">Caernarfonshire</a></dd>
+<dd><a href="#nogo">Caithness</a></dd>
+<dd><a href="#nogo">Cambridgeshire</a></dd>
+</dl>
+<dl>
+<dt><a href="#nogo">Group three</a></dt>
+<dd><a href="#nogo">Cardiganshire</a></dd>
+<dd><a href="#nogo">Carmarthenshire</a></dd>
+<dd><a href="#nogo">Cheshire</a></dd>
+<dd><a href="#nogo">Clackmannanshire</a></dd>
+<dd><a href="#nogo">Cornwall</a></dd>
+<dd><a href="#nogo">Cromartyshire</a></dd>
+<dd><a href="#nogo">Cumberland</a></dd>
+<dd><a href="#nogo">Denbighshire</a></dd>
+<dd><a href="#nogo">Derbyshire</a></dd>
+</dl>
+<br class="clear" />
+<dl>
+<dt><a href="#nogo">Group four</a></dt>
+<dd><a href="#nogo">Devon</a></dd>
+<dd><a href="#nogo">Dorset</a></dd>
+<dd><a href="#nogo">Down</a></dd>
+<dd><a href="#nogo">Dumfriesshire</a></dd>
+<dd><a href="#nogo">Dunbartonshire</a></dd>
+<dd><a href="#nogo">Durham</a></dd>
+<dd><a href="#nogo">East Lothian</a></dd>
+<dd><a href="index.html">Essex</a></dd>
+<dd><a href="#nogo">Fermanagh</a></dd>
+</dl>
+<dl>
+<dt><a href="#nogo">Group five</a></dt>
+<dd><a href="#nogo">Fife</a></dd>
+<dd><a href="#nogo">Flintshire</a></dd>
+<dd><a href="#nogo">Glamorgan</a></dd>
+<dd><a href="#nogo">Gloucestershire</a></dd>
+<dd><a href="#nogo">Hampshire</a></dd>
+<dd><a href="#nogo">Herefordshire</a></dd>
+<dd><a href="#nogo">Hertfordshire</a></dd>
+<dd><a href="#nogo">Huntingdonshire</a></dd>
+<dd><a href="#nogo">Inverness-shire</a></dd>
+</dl>
+<dl>
+<dt><a href="#nogo">Group six</a></dt>
+<dd><a href="#nogo">Kent</a></dd>
+<dd><a href="#nogo">Kincardineshire</a></dd>
+<dd><a href="#nogo">Kinross</a></dd>
+<dd><a href="#nogo">Kirkcudbrightshire</a></dd>
+<dd><a href="#nogo">Lanarkshire</a></dd>
+<dd><a href="#nogo">Lancashire</a></dd>
+<dd><a href="#nogo">Leicestershire</a></dd>
+<dd><a href="#nogo">Lincolnshire</a></dd>
+<dd><a href="#nogo">Londonderry</a></dd>
+</dl>
+<br class="clear" />
+<dl>
+<dt><a href="#nogo">Group seven</a></dt>
+<dd><a href="#nogo">Merioneth</a></dd>
+<dd><a href="#nogo">Middlesex</a></dd>
+<dd><a href="#nogo">Midlothian</a></dd>
+<dd><a href="#nogo">Monmouthshire</a></dd>
+<dd><a href="#nogo">Montgomeryshire</a></dd>
+<dd><a href="#nogo">Morayshire</a></dd>
+<dd><a href="#nogo">Nairnshire</a></dd>
+<dd><a href="#nogo">Norfolk</a></dd>
+<dd><a href="#nogo">Northamptonshire</a></dd>
+</dl>
+<dl>
+<dt><a href="#nogo">Group eight</a></dt>
+<dd><a href="#nogo">Northumberland</a></dd>
+<dd><a href="#nogo">Nottinghamshire</a></dd>
+<dd><a href="#nogo">Orkney</a></dd>
+<dd><a href="#nogo">Oxfordshire</a></dd>
+<dd><a href="#nogo">Pembrokeshire</a></dd>
+<dd><a href="#nogo">Peeblesshire</a></dd>
+<dd><a href="#nogo">Perthshire</a></dd>
+<dd><a href="#nogo">Radnorshire</a></dd>
+<dd><a href="#nogo">Renfrewshire</a></dd>
+</dl>
+<dl>
+<dt><a href="#nogo">Group nine</a></dt>
+<dd><a href="#nogo">Ross-shire</a></dd>
+<dd><a href="#nogo">Roxburghshire</a></dd>
+<dd><a href="#nogo">Rutland</a></dd>
+<dd><a href="#nogo">Selkirkshire</a></dd>
+<dd><a href="#nogo">Shetland</a></dd>
+<dd><a href="#nogo">Shropshire</a></dd>
+<dd><a href="#nogo">Somerset</a></dd>
+<dd><a href="#nogo">Staffordshire</a></dd>
+<dd><a href="#nogo">Stirlingshire</a></dd>
+</dl>
+<br class="clear" />
+<dl>
+<dt><a href="#nogo">Group ten</a></dt>
+<dd><a href="#nogo">Suffolk</a></dd>
+<dd><a href="#nogo">Surrey</a></dd>
+<dd><a href="#nogo">Sussex</a></dd>
+<dd><a href="#nogo">Sutherland</a></dd>
+<dd><a href="#nogo">Tyrone</a></dd>
+<dd><a href="#nogo">Warwickshire</a></dd>
+<dd><a href="#nogo">West Lothian</a></dd>
+<dd><a href="#nogo">Westmorland</a></dd>
+<dd><a href="#nogo">Wigtownshire</a></dd>
+</dl>
+<dl>
+<dt><a href="#nogo">Group eleven</a></dt>
+<dd><a href="#nogo">Wiltshire</a></dd>
+<dd><a href="#nogo">Worcestershire</a></dd>
+<dd><a href="#nogo">Yorkshire</a></dd>
+</dl>
+</div>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li class="single"><a href="#" class="tl single">博士课程</a><!--[if IE 7]><!--><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<div class="pos4">
+<dl>
+<dt><a href="#">CSS Showcase</a></dt>
+<dd><a href="#nogo">Your website here</a></dd>
+<dd><a href="#nogo">Your website here</a></dd>
+</dl>
+<dl>
+<dt><a href="nogo">CSS Navigation</a></dt>
+<dd><a href="#nogo">Your website here</a></dd>
+</dl>
+<dl>
+<dt><a href="nogo">CSS Layouts</a></dt>
+<dd><a href="#nogo">Your website here</a></dd>
+<dd><a href="#nogo">Your website here</a></dd>
+<dd><a href="#nogo">Your website here</a></dd>
+</dl>
+<dl>
+<dt><a href="nogo">CSS Blogs</a></dt>
+<dd><a href="#nogo">Your website here</a></dd>
+</dl>
+<dl>
+<dt><a href="nogo">CSS Hacks</a></dt>
+<dd><a href="#nogo">Your website here</a></dd>
+<dd><a href="#nogo">Your website here</a></dd>
+<dd><a href="#nogo">Your website here</a></dd>
+</dl>
+</div>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+<li class="two"><a href="#" class="tl">专业证书</a><!--[if IE 7]><!--><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+<div class="pos3">
+<dl>
+<dt><a href="#">Nikon</a></dt>
+<dd><a href="#nogo">Digital D2Xs</a></dd>
+<dd><a href="#nogo">Digital D2Hs</a></dd>
+<dd><a href="#nogo">Digital D200</a></dd>
+<dd><a href="#nogo">Digital D80</a></dd>
+<dd><a href="#nogo">Digital D40x</a></dd>
+<dd><a href="#nogo">Digital Coolpix</a></dd>
+<dd><a href="#nogo">SLR F6</a></dd>
+<dd><a href="#nogo">SLR FM10</a></dd>
+<dd><a href="#nogo">Wideangle</a></dd>
+<dd><a href="#nogo">Telephoto</a></dd>
+<dd><a href="#nogo">Teleconverters</a></dd>
+<dd><a href="#nogo">Speedlights</a></dd>
+<dd><a href="#nogo">Coolscan</a></dd>
+</dl>
+<dl>
+<dt><a href="#">Canon</a></dt>
+<dd><a href="#nogo">Digital IXUS</a></dd>
+<dd><a href="#nogo">Digital EOS-1Ds</a></dd>
+<dd><a href="#nogo">Digital EOS-5D</a></dd>
+<dd><a href="#nogo">Digital EOS-30D</a></dd>
+<dd><a href="#nogo">Digital EOS-400D</a></dd>
+<dd><a href="#nogo">Powershot</a></dd>
+<dd><a href="#nogo">Film EOS-300X</a></dd>
+<dd><a href="#nogo">Film EOS-300V</a></dd>
+<dd><a href="#nogo">Sureshot</a></dd>
+<dd><a href="#nogo">Macro</a></dd>
+<dd><a href="#nogo">Extenders</a></dd>
+<dd><a href="#nogo">Speedlights</a></dd>
+<dd><a href="#nogo">Motor Drives</a></dd>
+<dd><a href="#nogo">Focusing Screens</a></dd>
+</dl>
+<dl>
+<dt><a href="nogo">Pentax</a></dt>
+<dd><a href="#nogo">Optio A30</a></dd>
+<dd><a href="#nogo">Optio T30</a></dd>
+<dd><a href="#nogo">Optio S7</a></dd>
+<dd><a href="#nogo">Optio W30</a></dd>
+<dd><a href="#nogo">Digital K10D</a></dd>
+<dd><a href="#nogo">Digital K110D</a></dd>
+<dd><a href="#nogo">Pentax *istDL2</a></dd>
+<dd><a href="#nogo">645NII</a></dd>
+<dd><a href="#nogo">AF-540 FGZ</a></dd>
+<dd><a href="#nogo">KB zoom</a></dd>
+<dd><a href="#nogo">KB macro</a></dd>
+</dl>
+</div>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+</ul>
+
+</div>
+</body>
+</html>

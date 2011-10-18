@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+.gallery{width:1000px;overflow:hidden;margin:0 auto;}
+.gallery .Cont{
+	width:960px;
+	overflow:hidden;
+	margin:0 auto;
+	padding:5px 0;
+}
+.gallery .ScrCont{width:10000000px;}
+.gallery .Cont .pic{
+	width:134px;
+	float:left;
+	text-align:center;
+	padding-right:30px;
+}
+*+html .gallery .Cont .pic{width:130px;float:left;text-align:center;padding-right:20px;}
+.gallery .Cont .pic img{padding:1px;background:#fff;border:1px solid #ccc;display:block;margin:0 auto;}
+.gallery .Cont .pic p{
+	line-height:18px;
+	color:#505050;
+	font-size: 12px;
+}
+.gallery .Cont a:link,.gallery .Cont a:visited{
+	color:#333;
+	text-decoration:none;	font-size: 12px;
+}
+.gallery .Cont a:hover{
+	color:#C00;
+	text-decoration:underline;
+}
+.gallery #List1,.rollBox #List2{float:left;}
