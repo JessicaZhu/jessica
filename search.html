@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>院校搜索</title>
+<link rel="stylesheet" type="text/css" href="css/college-search.css" />
+<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+      <script type="text/javascript" src="js/gallery.js"></script>
+      <script type="text/javascript" language="javascript">
+     function sch(obj){
+           for(var i=1;i<12;i++)
+           {
+               if(i==obj){
+                  document.getElementById("s"+i).className="menu6";
+                  document.getElementById("ds"+i).style.display="block";
+               }
+			   else{
+                  document.getElementById("s"+i).className="menu5";
+                  document.getElementById("ds"+i).style.display="none";
+               }
+           }
+        }
+		
+		</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+//Set default open/close settings
+$('.acc_container').hide(); //Hide/close all containers
+$('.acc_trigger:first').addClass('active').next().show(); //Add "active" class to first trigger, then show/open the immediate next container
+
+//On Click
+$('.acc_trigger').click(function(){
+	if( $(this).next().is(':hidden') ) { //If immediate next container is closed...
+		$('.acc_trigger').removeClass('active').next().slideUp(); //Remove all .acc_trigger classes and slide up the immediate next container
+		$(this).toggleClass('active').next().slideDown(); //Add .acc_trigger class to clicked trigger and slide down the immediate next container
+	}
+	
+	return false; //Prevent the browser jump to the link anchor
+
+});
+
+});
+</script>
+</head>
+
+<body style="margin:0 auto; padding:0">
+<div class="body">
+  <!--AD banner-->
+<div class="ad-banner"><img src="images/headad.jpg"  border="0" height="100" width="1010" title="北美大学无语言双录取" alt="北美大学无语言双录取"/></div>
+ <div style="overflow:hidden; display:block">
+  <!--left710--><div class="left710">
+    <!--college search engine-->
+    <div class="college-search-engine">
+      <!--title-cse-->
+      <div class="title-cse">
+      <div class="menu5">院校搜索</div>
+      </div>
+      <!--content-cse-->
+      <div class="content-cse">
+    
+      <ul>
+      <li>
+        <label for="studycountry">留学国家：</label>
+        <select id="studycountry" name="studycountry">
+        <option value="">请选择</option>
+        </select>
+      </li>
+      <li>
+        <label for="studyarea">地区：</label>
+        <select id="studyarea" name="studyarea">
+        <option value="">请选择</option>
+        </select>
+      </li>
+      <li>
+        <label for="college">院校：</label>
+        <select id="college" name="college">
+        <option value="">请选择</option>
+        </select>
+      </li>
+      
+       <li>
+        <label for="degree">学历：</label>
+        <select id="degree" name="degree">
+        <option value="">请选择</option>
+        </select>
+      </li>
+       <li>
+        <label for="major">专业：</label>
+        <select id="major" name="major">
+        <option value="">请选择</option>
+        </select>
+      </li>
+       
+      </ul>
+       <span class="submit"> <input id="search"/ type="submit"  class="searchsubmit" value="搜索"></span>
+     </div>
+     <!--pingyin-cse-->
+      <div class="pingyin-cse">
+      <label for="pingyinsearch" class="t2">拼音检索：</label>
+     <a href="#"> A</a>
+     <a href="#"> B</a> 
+     <a href="#"> C</a> 
+     <a href="#"> D</a> 
+     <a href="#"> E</a> 
+     <a href="#"> F</a> 
+     <a href="#"> G</a> 
+     <a href="#"> H</a> 
+     <a href="#"> I</a> 
+     <a href="#"> J</a>
+     <a href="#"> K</a>
+     <a href="#"> L</a>
+     <a href="#"> M</a>
+     <a href="#"> N</a>
+     <a href="#"> O</a>
+     <a href="#"> P</a>
+     <a href="#"> Q</a>
+     <a href="#"> R</a>
+     <a href="#"> S</a>
+     <a href="#"> T</a>
+     <a href="#"> U</a>
+     <a href="#"> V</a>
+     <a href="#"> W</a>
+     <a href="#"> X</a>
+     <a href="#"> Y</a>
+     <a href="#"> Z</a></div>
+    </div>
+    <!--college list-->
+    <div class="college-search-engine">
+    <ul id="school">
+    <li id="s1" class="menu6" onmouseover="sch(1)"><a href="#" >美国</a></li>
+    <li id="s2" class="menu5" onmouseover="sch(2)"><a href="#">英国</a></li>
+    <li id="s3" class="menu5" onmouseover="sch(3)"><a href="#">加拿大</a></li>
+    <li id="s4" class="menu5" onmouseover="sch(4)"><a href="#" >澳大利亚</a></li>
+    <li id="s5" class="menu5" onmouseover="sch(5)"><a href="#">新西兰</a></li>
+    <li id="s6" class="menu5" onmouseover="sch(6)"><a href="#">爱尔兰</a></li>
+    <li id="s7" class="menu5" onmouseover="sch(7)"><a href="#" >荷兰</a></li>
+    <li id="s8" class="menu5" onmouseover="sch(8)"><a href="#">新加坡</a></li>
+     </ul>
+
+ <div id="ds1" >
+   <ul>
+     <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+         <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+       <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+         <span class="t3">Big Bend Community College</span>
+         <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+       <ul>
+           <li class="app"><a href="#">在线报名</a></li>
+         <li class="ass"><a href="#">入学评估</a></li>
+         <li class="pro"><a href="#">专业查看</a></li>
+         <li class="fav"><a href="#">加入收藏</a></li>
+       </ul>
+     </li>
+     <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+         <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+       <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+         <span class="t3">Big Bend Community College</span>
+         <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+       <ul>
+           <li class="app"><a href="#">在线报名</a></li>
+           <li class="ass"><a href="#">入学评估</a></li>
+           <li class="pro"><a href="#">专业查看</a></li>
+           <li class="fav"><a href="#">加入收藏</a></li>
+         </ul>
+     </li>
+     <div class="pagination"><span class="total">1/15</span>
+         <div class="pn"><span class="current">1</span><a href="list-2.html">2</a><a href="list-3.html">3</a><a href="list-4.html">4</a><a href="list-5.html">5</a><a href="list-6.html">6</a><a href="list-2.html" >下一页&gt;&gt;</a><a href="list-15.html">末页</a>
+             <form class="jump" onsubmit="if(!isNaN(page.value)&amp;&amp;page.value!=''&amp;&amp;page.value&lt;=15){window.location='list-'+page.value+'.html';return false;}else{page.focus();return false;}">
+               <span class="inp_txt">转到</span>
+               <input type="text" name="page2" class="inp_txt" />
+               <span class="inp_txt">页</span>
+               <input type="submit" name="submit2" class="btn_submit" value="确定" />
+             </form>
+         </div>
+     </div>
+     </ul>
+ </div>
+ <div id="ds2" class="sn">
+   <ul>
+     <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+         <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+       <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+         <span class="t3">Big Bend Community College</span>
+         <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+       <ul>
+           <li class="app"><a href="#">在线报名</a></li>
+           <li class="ass"><a href="#">入学评估</a></li>
+           <li class="pro"><a href="#">专业查看</a></li>
+           <li class="fav"><a href="#">加入收藏</a></li>
+         </ul>
+     </li>
+     <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+         <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+       <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+         <span class="t3">Big Bend Community College</span>
+         <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+       <ul>
+           <li class="app"><a href="#">在线报名</a></li>
+           <li class="ass"><a href="#">入学评估</a></li>
+           <li class="pro"><a href="#">专业查看</a></li>
+           <li class="fav"><a href="#">加入收藏</a></li>
+         </ul>
+     </li>
+     <div class="pagination"><span class="total">1/15</span>
+         <div class="pn"><span class="current">1</span><a href="list-2.html">2</a><a href="list-3.html">3</a><a href="list-4.html">4</a><a href="list-5.html">5</a><a href="list-6.html">6</a><a href="list-2.html" >下一页&gt;&gt;</a><a href="list-15.html">末页</a>
+             <form class="jump" onsubmit="if(!isNaN(page.value)&amp;&amp;page.value!=''&amp;&amp;page.value&lt;=15){window.location='list-'+page.value+'.html';return false;}else{page.focus();return false;}">
+               <span class="inp_txt">转到</span>
+               <input type="text" name="page3" class="inp_txt" />
+               <span class="inp_txt">页</span>
+               <input type="submit" name="submit3" class="btn_submit" value="确定" />
+             </form>
+         </div>
+     </div>
+   </ul>
+ </div>
+ <div id="ds3" class="sn">
+   <ul>
+     <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+         <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+       <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+         <span class="t3">Big Bend Community College</span>
+         <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+       <ul>
+           <li class="app"><a href="#">在线报名</a></li>
+           <li class="ass"><a href="#">入学评估</a></li>
+           <li class="pro"><a href="#">专业查看</a></li>
+           <li class="fav"><a href="#">加入收藏</a></li>
+         </ul>
+     </li>
+     <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+         <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+       <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+         <span class="t3">Big Bend Community College</span>
+         <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+       <ul>
+           <li class="app"><a href="#">在线报名</a></li>
+           <li class="ass"><a href="#">入学评估</a></li>
+           <li class="pro"><a href="#">专业查看</a></li>
+           <li class="fav"><a href="#">加入收藏</a></li>
+         </ul>
+     </li>
+     <div class="pagination"><span class="total">1/15</span>
+         <div class="pn"><span class="current">1</span><a href="list-2.html">2</a><a href="list-3.html">3</a><a href="list-4.html">4</a><a href="list-5.html">5</a><a href="list-6.html">6</a><a href="list-2.html" >下一页&gt;&gt;</a><a href="list-15.html">末页</a>
+             <form class="jump" onsubmit="if(!isNaN(page.value)&amp;&amp;page.value!=''&amp;&amp;page.value&lt;=15){window.location='list-'+page.value+'.html';return false;}else{page.focus();return false;}">
+               <span class="inp_txt">转到</span>
+               <input type="text" name="page4" class="inp_txt" />
+               <span class="inp_txt">页</span>
+               <input type="submit" name="submit4" class="btn_submit" value="确定" />
+             </form>
+         </div>
+     </div>
+   </ul>
+ </div>
+ <div id="ds4" class="sn" >
+   <ul>
+     <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+         <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+       <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+         <span class="t3">Big Bend Community College</span>
+         <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+       <ul>
+           <li class="app"><a href="#">在线报名</a></li>
+           <li class="ass"><a href="#">入学评估</a></li>
+           <li class="pro"><a href="#">专业查看</a></li>
+           <li class="fav"><a href="#">加入收藏</a></li>
+         </ul>
+     </li>
+     <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+         <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+       <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+         <span class="t3">Big Bend Community College</span>
+         <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+       <ul>
+           <li class="app"><a href="#">在线报名</a></li>
+           <li class="ass"><a href="#">入学评估</a></li>
+           <li class="pro"><a href="#">专业查看</a></li>
+           <li class="fav"><a href="#">加入收藏</a></li>
+         </ul>
+     </li>
+     <div class="pagination"><span class="total">1/15</span>
+         <div class="pn"><span class="current">1</span><a href="list-2.html">2</a><a href="list-3.html">3</a><a href="list-4.html">4</a><a href="list-5.html">5</a><a href="list-6.html">6</a><a href="list-2.html" >下一页&gt;&gt;</a><a href="list-15.html">末页</a>
+             <form class="jump" onsubmit="if(!isNaN(page.value)&amp;&amp;page.value!=''&amp;&amp;page.value&lt;=15){window.location='list-'+page.value+'.html';return false;}else{page.focus();return false;}">
+               <span class="inp_txt">转到</span>
+               <input type="text" name="page5" class="inp_txt" />
+               <span class="inp_txt">页</span>
+               <input type="submit" name="submit5" class="btn_submit" value="确定" />
+             </form>
+         </div>
+     </div>
+   </ul>
+ </div>
+    <div id="ds5" class="sn">
+      <ul>
+        <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+            <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+          <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+            <span class="t3">Big Bend Community College</span>
+            <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+          <ul>
+              <li class="app"><a href="#">在线报名</a></li>
+              <li class="ass"><a href="#">入学评估</a></li>
+              <li class="pro"><a href="#">专业查看</a></li>
+              <li class="fav"><a href="#">加入收藏</a></li>
+            </ul>
+        </li>
+        <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+            <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+          <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+            <span class="t3">Big Bend Community College</span>
+            <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+          <ul>
+              <li class="app"><a href="#">在线报名</a></li>
+              <li class="ass"><a href="#">入学评估</a></li>
+              <li class="pro"><a href="#">专业查看</a></li>
+              <li class="fav"><a href="#">加入收藏</a></li>
+            </ul>
+        </li>
+        <div class="pagination"><span class="total">1/15</span>
+            <div class="pn"><span class="current">1</span><a href="list-2.html">2</a><a href="list-3.html">3</a><a href="list-4.html">4</a><a href="list-5.html">5</a><a href="list-6.html">6</a><a href="list-2.html" >下一页&gt;&gt;</a><a href="list-15.html">末页</a>
+                <form class="jump" onsubmit="if(!isNaN(page.value)&amp;&amp;page.value!=''&amp;&amp;page.value&lt;=15){window.location='list-'+page.value+'.html';return false;}else{page.focus();return false;}">
+                  <span class="inp_txt">转到</span>
+                  <input type="text" name="page6" class="inp_txt" />
+                  <span class="inp_txt">页</span>
+                  <input type="submit" name="submit6" class="btn_submit" value="确定" />
+                </form>
+            </div>
+        </div>
+      </ul>
+    </div>
+    <div id="ds6" class="sn">
+      <ul>
+        <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+            <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+          <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+            <span class="t3">Big Bend Community College</span>
+            <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+          <ul>
+              <li class="app"><a href="#">在线报名</a></li>
+              <li class="ass"><a href="#">入学评估</a></li>
+              <li class="pro"><a href="#">专业查看</a></li>
+              <li class="fav"><a href="#">加入收藏</a></li>
+            </ul>
+        </li>
+        <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+            <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+          <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+            <span class="t3">Big Bend Community College</span>
+            <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+          <ul>
+              <li class="app"><a href="#">在线报名</a></li>
+              <li class="ass"><a href="#">入学评估</a></li>
+              <li class="pro"><a href="#">专业查看</a></li>
+              <li class="fav"><a href="#">加入收藏</a></li>
+            </ul>
+        </li>
+        <div class="pagination"><span class="total">1/15</span>
+            <div class="pn"><span class="current">1</span><a href="list-2.html">2</a><a href="list-3.html">3</a><a href="list-4.html">4</a><a href="list-5.html">5</a><a href="list-6.html">6</a><a href="list-2.html" >下一页&gt;&gt;</a><a href="list-15.html">末页</a>
+                <form class="jump" onsubmit="if(!isNaN(page.value)&amp;&amp;page.value!=''&amp;&amp;page.value&lt;=15){window.location='list-'+page.value+'.html';return false;}else{page.focus();return false;}">
+                  <span class="inp_txt">转到</span>
+                  <input type="text" name="page7" class="inp_txt" />
+                  <span class="inp_txt">页</span>
+                  <input type="submit" name="submit7" class="btn_submit" value="确定" />
+                </form>
+            </div>
+        </div>
+      </ul>
+    </div>
+    <div id="ds7" class="sn">
+      <ul>
+        <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+            <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+          <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+            <span class="t3">Big Bend Community College</span>
+            <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+          <ul>
+              <li class="app"><a href="#">在线报名</a></li>
+              <li class="ass"><a href="#">入学评估</a></li>
+              <li class="pro"><a href="#">专业查看</a></li>
+              <li class="fav"><a href="#">加入收藏</a></li>
+            </ul>
+        </li>
+        <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+            <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+          <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+            <span class="t3">Big Bend Community College</span>
+            <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+          <ul>
+              <li class="app"><a href="#">在线报名</a></li>
+              <li class="ass"><a href="#">入学评估</a></li>
+              <li class="pro"><a href="#">专业查看</a></li>
+              <li class="fav"><a href="#">加入收藏</a></li>
+            </ul>
+        </li>
+        <div class="pagination"><span class="total">1/15</span>
+            <div class="pn"><span class="current">1</span><a href="list-2.html">2</a><a href="list-3.html">3</a><a href="list-4.html">4</a><a href="list-5.html">5</a><a href="list-6.html">6</a><a href="list-2.html" >下一页&gt;&gt;</a><a href="list-15.html">末页</a>
+                <form class="jump" onsubmit="if(!isNaN(page.value)&amp;&amp;page.value!=''&amp;&amp;page.value&lt;=15){window.location='list-'+page.value+'.html';return false;}else{page.focus();return false;}">
+                  <span class="inp_txt">转到</span>
+                  <input type="text" name="page8" class="inp_txt" />
+                  <span class="inp_txt">页</span>
+                  <input type="submit" name="submit8" class="btn_submit" value="确定" />
+                </form>
+            </div>
+        </div>
+      </ul>
+    </div>
+    <div id="ds8" class="sn">
+      <ul>
+        <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+            <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+          <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+            <span class="t3">Big Bend Community College</span>
+            <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+          <ul>
+              <li class="app"><a href="#">在线报名</a></li>
+              <li class="ass"><a href="#">入学评估</a></li>
+              <li class="pro"><a href="#">专业查看</a></li>
+              <li class="fav"><a href="#">加入收藏</a></li>
+            </ul>
+        </li>
+        <li class="school_results_list_item"><img src="images/bigbend.jpg"/ class="logocollege" />
+            <div class="t2" style="float:right">关注度:<span class="t5">10240</span></div>
+          <span class="t2"><a href="#">美国大本德社区学院</a></span><br />
+            <span class="t3">Big Bend Community College</span>
+            <p><strong>简介：</strong>大本德学院成立于1962，位于华盛顿州，是一所当地授权的公立社区大学，主要项目有：学术文凭项目、文理科交叉文凭、理科交叉文凭、专业...<a href="#">[详细介绍]</a></p>
+          <ul>
+              <li class="app"><a href="#">在线报名</a></li>
+              <li class="ass"><a href="#">入学评估</a></li>
+              <li class="pro"><a href="#">专业查看</a></li>
+              <li class="fav"><a href="#">加入收藏</a></li>
+            </ul>
+        </li>
+        <div class="pagination"><span class="total">1/15</span>
+            <div class="pn"><span class="current">1</span><a href="list-2.html">2</a><a href="list-3.html">3</a><a href="list-4.html">4</a><a href="list-5.html">5</a><a href="list-6.html">6</a><a href="list-2.html" >下一页&gt;&gt;</a><a href="list-15.html">末页</a>
+                <form class="jump" onsubmit="if(!isNaN(page.value)&amp;&amp;page.value!=''&amp;&amp;page.value&lt;=15){window.location='list-'+page.value+'.html';return false;}else{page.focus();return false;}">
+                  <span class="inp_txt">转到</span>
+                  <input type="text" name="page9" class="inp_txt" />
+                  <span class="inp_txt">页</span>
+                  <input type="submit" name="submit9" class="btn_submit" value="确定" />
+                </form>
+            </div>
+        </div>
+      </ul>
+    </div>
+    </div>
+  </div>
+  <!--right280-->
+<div class="right280">
+  <!--map-->
+<div class="container">
+
+	<div class="r280">
+      <div class="tr">热门留学目的地</div>
+	  <div class="more"><a href="#">更多</a></div>
+	  </div>
+	<h2 class="acc_trigger"><a href="#">美国推荐学院</a></h2>
+	<div class="acc_container">
+      <div class="block">
+        <ul>
+          <li class="logo-word"> <a href="#"> <img src="images/211133_4_130_50.jpg" width="90" />
+                <h5 > 美国维多利亚大学 </h5>
+            <p>优势专业：商科、护理、教育等专业澳洲一流，工程...</p>
+          </a> </li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+        </ul>
+      </div>
+	  </div>
+	<h2 class="acc_trigger"><a href="#">英国推荐学院</a></h2>
+	<div class="acc_container">
+      <div class="block">
+        <ul>
+          <li class="logo-word"> <a href="#"> <img src="images/211133_4_130_50.jpg" width="90" />
+                <h5 > 美国维多利亚大学 </h5>
+            <p>优势专业：商科、护理、教育等专业澳洲一流，工程...</p>
+          </a> </li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+        </ul>
+      </div>
+	  </div>
+	<h2 class="acc_trigger"><a href="#">加拿大推荐学院</a></h2>
+	<div class="acc_container">
+	  <div class="block">
+        <ul>
+          <li class="logo-word"> <a href="#">
+               <img src="images/211133_4_130_50.jpg" width="90" /><h5 > 美国维多利亚大学 </h5>
+         
+            <p>优势专业：商科、护理、教育等专业澳洲一流，工程...</p>
+          </a> </li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+        </ul>
+	    </div>
+	</div>
+	
+	<h2 class="acc_trigger"><a href="#">澳大利亚推荐学院</a></h2>
+	<div class="acc_container">
+      <div class="block">
+        <ul>
+          <li class="logo-word"> <a href="#"> <img src="images/211133_4_130_50.jpg" width="90" />
+                <h5 > 美国维多利亚大学 </h5>
+            <p>优势专业：商科、护理、教育等专业澳洲一流，工程...</p>
+          </a> </li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+        </ul>
+      </div>
+	  </div>
+    <h2 class="acc_trigger"><a href="#">新西兰推荐学院</a></h2>
+    <div class="acc_container">
+      <div class="block">
+        <ul>
+          <li class="logo-word"> <a href="#"> <img src="images/211133_4_130_50.jpg" width="90" />
+                <h5 > 美国维多利亚大学 </h5>
+            <p>优势专业：商科、护理、教育等专业澳洲一流，工程...</p>
+          </a> </li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+        </ul>
+      </div>
+      </div>
+        <h2 class="acc_trigger"><a href="#">爱尔兰推荐学院</a></h2>
+        <div class="acc_container">
+      <div class="block">
+        <ul>
+          <li class="logo-word"> <a href="#"> <img src="images/211133_4_130_50.jpg" width="90" />
+                <h5 > 美国维多利亚大学 </h5>
+            <p>优势专业：商科、护理、教育等专业澳洲一流，工程...</p>
+          </a> </li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+        </ul>
+      </div>
+      </div>
+        <h2 class="acc_trigger"><a href="#">荷兰推荐学院</a></h2>
+        <div class="acc_container">
+      <div class="block">
+        <ul>
+          <li class="logo-word"> <a href="#"> <img src="images/211133_4_130_50.jpg" width="90" />
+                <h5 > 美国维多利亚大学 </h5>
+            <p>优势专业：商科、护理、教育等专业澳洲一流，工程...</p>
+          </a> </li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+        </ul>
+      </div>
+      </div>
+        <h2 class="acc_trigger"><a href="#">新加坡推荐学院</a></h2>
+        <div class="acc_container">
+      <div class="block">
+        <ul>
+          <li class="logo-word"> <a href="#"> <img src="images/211133_4_130_50.jpg" width="90" />
+                <h5 > 美国维多利亚大学 </h5>
+            <p>优势专业：商科、护理、教育等专业澳洲一流，工程...</p>
+          </a> </li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+          <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+  <div class="r280">
+   
+      <div class="tr">院校博文</div>
+      
+      <div class="more"><a href="#">更多</a></div></div>
+    <ul>
+      <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+      <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+      <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+      <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+      <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+      <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+      <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+      <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+      <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+      <li class="hlist"><a href="#">留学美国文理学院——贵族式的精英...</a></li>
+    </ul>
+   
+    <div class="r280">
+      
+        <div class="tr">热门专业</div>
+        <div class="topmajor" >专业排行Top12</div>
+      </div>
+     
+        <ul>
+        <li class="t1"> <span class="top1-3">1</span><a href="#">物流硕士</a></li>
+        <li class="t1"><span class="top1-3">2</span><a href="#">物流硕士</a></li>
+        <li class="t1"><span class="top1-3">3</span><a href="#">物流硕士</a></li>
+        <li class="t4"><span class="top4-10">4</span><a href="#">物流硕士</a></li>
+        <li class="t4"><span class="top4-10">5</span><a href="#">物流硕士</a></li>
+        <li class="t4"><span class="top4-10">6</span><a href="#">物流硕士</a></li>
+        <li class="t4"><span class="top4-10">7</span><a href="#">物流硕士</a></li>
+        <li class="t4"><span class="top4-10">8</span><a href="#">物流硕士</a></li>
+        <li class="t4"><span class="top4-10">9</span><a href="#">物流硕士</a></li>
+        <li class="t4"><span class="top4-10">10</span><a href="#">物流硕士</a></li>
+      </ul>
+      
+    </div>
+</div>
+  </div>
+<div class="container1010">
+  <div class="t280" >
+    <div class="tr">院校图库</div>
+    <div class="more"><a href="#">更多</a></div>
+  </div>
+  <div class="gallery"> <img onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()" style="float:left; margin-top:40px" src="images/shqm_left_pic.gif" width="12" height="31" /><img  onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()"  style=" float:right; margin-top:40px" src="images/shqm_right_pic.gif" width="12" height="31" />
+      <div class="Cont" id="ISL_Cont">
+        <div class="ScrCont">
+          <div id="List1">
+            <!-- 图片列表 begin -->
+            <div class="pic"> <a href="#" target="_blank"><img src="images/20110401114805008_1.jpg" width="130" height="100" /></a> <a href="#" target="_blank">相关产品图片浏览001</a> </div>
+            <div class="pic"> <a href="#" target="_blank"><img src="images/20110401114805008_1.jpg" width="130" height="100" /></a> <a href="#" target="_blank">相关产品图片浏览002</a> </div>
+            <div class="pic"> <a href="#" target="_blank"><img src="images/20110401114805008_1.jpg" width="130" height="100" /></a> <a href="#" target="_blank">相关产品图片浏览003</a> </div>
+            <div class="pic"> <a href="#" target="_blank"><img src="images/20110401114805008_1.jpg" width="130" height="100" /></a> <a href="#" target="_blank">相关产品图片浏览004</a> </div>
+            <div class="pic"> <a href="#" target="_blank"><img src="images/20110401114805008_1.jpg" width="130" height="100" /></a> <a href="#" target="_blank">相关产品图片浏览005</a> </div>
+            <div class="pic"> <a href="#" target="_blank"><img src="images/20110401114805008_1.jpg" width="130" height="100" /></a> <a href="#" target="_blank">相关产品图片浏览006</a> </div>
+            <div class="pic"> <a href="#" target="_blank"><img src="images/20110401114805008_1.jpg" width="130" height="100" /></a> <a href="#" target="_blank">相关产品图片浏览007</a> </div>
+            <div class="pic"> <a href="#" target="_blank"><img src="images/20110401114805008_1.jpg" width="130" height="100" /></a> <a href="#" target="_blank">相关产品图片浏览008</a> </div>
+            <div class="pic"> <a href="#" target="_blank"><img src="images/20110401114805008_1.jpg" width="130" height="100" /></a> <a href="#" target="_blank">相关产品图片浏览009</a> </div>
+            <div class="pic"> <a href="#" target="_blank"><img src="images/20110401114805008_1.jpg" width="130" height="100" /></a> <a href="#" target="_blank">相关产品图片浏览010</a> </div>
+            <!-- 图片列表 end -->
+          </div>
+          <div id="List2"></div>
+        </div>
+      </div>
+  </div>
+  <div style="margin:0 6px"></div>
+</div>
+</div>
+ </div>
+</body>
+</html>
