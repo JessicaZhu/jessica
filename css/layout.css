@@ -1,13 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
-
+*{margin: 0 auto; padding: 0}
 .body{
 	width:1010px;
 	overflow:hidden;
 	margin:0 auto;
 	padding:0;
-	font:  Arial, "宋体";
-	display: block;
+	font-family: Arial;
+
 }
 ul{list-style:none outside none;
 	margin:0;
@@ -57,16 +57,16 @@ ul{list-style:none outside none;
 .tips{
 	border:1px dashed #DCDDDD;
 	margin:0 0 10px 0;
-	padding:0;
+
 	width:702px;
 	overflow: hidden;
 	background-color:#FFE6FF;
 	padding:6px 8px;
 }
 .tipsbooking{
-	border:1px dashed #CCCCC;
+	border:1px dashed #CCCCCC;
 	margin:0 0 10px 0;
-	padding:0;
+
 	width:262px;
 	/* [disabled]overflow: hidden; */
 	background-color:#F7F7F7;
@@ -110,9 +110,8 @@ ul{list-style:none outside none;
 	/* [disabled]padding-bottom: 10px; */
 	padding: 0;
 	list-style: none outside none;
-	background-image: url(../images/grow.png);
-	background-repeat: no-repeat;
-	background-position: left top;
+	background: url(../images/grow.png) left top no-repeat;
+
 	width: 237px;
 	height: 202px;
 }
@@ -158,9 +157,7 @@ ul{list-style:none outside none;
 	margin:0 0 0 0;
 	padding:0;
 	width:280px;
-	background-image: url(../images/280sbottom.gif);
-	background-repeat: no-repeat;
-	background-position: left bottom;
+	background: url(../images/280sbottom.gif) no-repeat left bottom;
 	overflow: hidden;
 	
 }
@@ -180,5 +177,5 @@ ul{list-style:none outside none;
 	overflow: hidden;
 }
 .container280 li{
-	margin:0px;
+	margin:0;
 }

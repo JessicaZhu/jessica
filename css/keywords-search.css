@@ -80,14 +80,13 @@
 	width: 460px;
 }
 #Scroll {
-	CLEAR: both;
-	FONT-SIZE: 12px;
-	MARGIN: 0px;
-	WIDTH: 460px;
-	COLOR: #c2130e;
-	LINE-HEIGHT: 27px;
-	HEIGHT: 27px;
-	TEXT-ALIGN: left;
+	clear: both;
+	font-size: 12px;
+	margin: 0;
+	width: 460px;
+	color: #c2130e;
+	line-height: 27px;
+	text-align: left;
 	padding:0
 }
 #Scroll a{ color:#005599; text-decoration:none}
@@ -114,7 +113,7 @@
 }
 .btn_so{
 	margin:0;
-	padding:0px;
+	padding:0;
 	background:url(../images/btn_search.png) top left no-repeat;
 	text-indent:-9999px;
 	width:82px;
@@ -145,7 +144,7 @@ fieldset{ border:0 none;margin:0; padding:2px;}
 	overflow:hidden;
 	display:block;
 	margin:0 8px;
-	padding:6px 0 6px 0px;
+	padding:6px 0 6px 0;
 	border-bottom:1px dotted #CCC;
 	width: 692px;
 }
@@ -197,7 +196,7 @@ fieldset{ border:0 none;margin:0; padding:2px;}
 	overflow: hidden;
 }
 .container280 li{
-	margin:0px;
+	margin:0;
 }
 .collegename{
 	padding:4px;
@@ -207,10 +206,7 @@ fieldset{ border:0 none;margin:0; padding:2px;}
 }
 .collegeblog{
 	background:url(../images/greydot.gif) center left no-repeat;
-	padding-left: 8px;
-	padding-top: 4px;
-	padding-right: 4px;
-	padding-bottom: 4px;
+	padding: 4px 4px 4px 8px;
 }
 .collegeblog a{ font-size:14px; color:#333; text-decoration:none}
 .collegeblog a:hover{ color:#C00; text-decoration:underline}

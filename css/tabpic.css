@@ -8,11 +8,7 @@
 	padding:1px;
 	border:1px solid #cccccc;
 	/* [disabled]background:url(http://trip.elong.com/trip/default/news/images/logo_gray.jpg) center center no-repeat; */
-
-
-
-
-*background:url(http://trip.elong.com/trip/default/news/images/logo_gray.jpg) 220px 120px no-repeat;}
+}
 .sub_box img{border:none; width:311px; height:231px;}
 #bd1lfimg{
 	position:relative;
@@ -32,7 +28,7 @@
 	margin: 0;
 	padding: 0;
 }
-#bd1lfimg dt{width:311px; height:231px; position:absolute; left:0px; top:0px}
+#bd1lfimg dt{width:311px; height:231px; position:absolute; left:0; top:0}
 #bd1lfimg dd{
 	width:311px;
 	height:40px;
@@ -40,8 +36,7 @@
 	filter:alpha(Opacity=70);
 	Opacity:0.7;
 	position:absolute;
-	left:0px;
-	bottom:0px;
+	bottom:0;
 	padding:0 6px;
 	margin:0
 }

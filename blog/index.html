@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+<title>无标题文档</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="container">
+<div class="top">
+<span class="xfz"><img src="images/2.jpg" /></span>
+<span class="lxsy"><a href="#">留学首页</a>  <a href="#">网站地图</a> | <a href="#">诚聘</a> <a href="#">关于我们</a> <a href="#">联系我们</a> <a href="#"><span style="color:#FF0000">东方留学</span></a></span></div>
+<div class="beijing">
+<div class="lsname">李老师<span style="font-size:26px; color:#FFFFFF; font-weight:normal">（澳洲留学部）</span></div>
+<ul class="banner">
+<li><a href="#">首页</a></li>
+<li><a href="#">关于我</a></li>
+<li><a href="#">留学答疑</a></li>
+<li><a href="#">我的评估</a></li>
+<li><a href="#">在线报名</a></li>
+<li><a href="#">预约免谈</a></li>
+<li><a href="#">在线地图</a></li>
+</ul>
+<div class="zhtp">
+<DIV id=swap_pic>
+	<DIV id=prev class=scroll>PREV</DIV>
+<DIV class=box>
+<UL style="LEFT: 0px" id=pics class=pics>
+  <LI>
+  <P><A href="http://www.update8.com/" target=_blank><IMG alt="" src="images/12.jpg"><SPAN>李老师</SPAN></A></P>
+  <P><A href="http://www.nifengla.com/" target=_blank><IMG alt="" src="images/12.jpg"><SPAN>站</SPAN></A></P>
+  <P><A href="http://www.update8.com/" target=_blank><IMG alt="" src="images/12.jpg"><SPAN>第九大陆官网</SPAN></A></P>
+    <P><A href="http://www.update8.com/" target=_blank><IMG alt="" src="images/12.jpg"><SPAN>英雄联盟不删档官网</SPAN></A></P>
+  <P><A href="http://www.nifengla.com/" target=_blank><IMG alt="" src="images/12.jpg"><SPAN>你疯啦官方网站</SPAN></A></P>
+  </LI>
+  <LI>
+  <P><A href="http://www.update8.com/" target=_blank><IMG alt="" src="images/lrtk.jpg"><SPAN>技术教程网 搜集整理</SPAN></A></P>
+  <P><A href="http://www.update8.com/" target=_blank><IMG alt="" src="images/speed1.jpg"><SPAN>QQ飞车官网</SPAN></A></P>
+  <P><A href="http://www.maitianquan.com/" target=_blank><IMG alt="" src="images/qqxy.jpg"><SPAN>麦田圈官方网站</SPAN></A></P></LI>
+  </UL></DIV>
+	<DIV id=next class=scroll>NEXT</DIV>
+    
+<SCRIPT type=text/javascript>
+(function(){
+	var vari={
+		width:960,
+		pics:document.getElementById("pics"),
+		prev:document.getElementById("prev"),
+		next:document.getElementById("next"),
+		len:document.getElementById("pics").getElementsByTagName("li").length,
+		intro:document.getElementById("pics").getElementsByTagName("p"),
+		now:1,
+		step:5,
+		dir:null,
+		span:null,
+		span2:null,
+		begin:null,
+		begin2:null,
+		end2:null,
+		move:function(){
+			if(parseInt(vari.pics.style.left,10)>vari.dir*vari.now*vari.width&&vari.dir==-1){
+				vari.step=(vari.step<2)?1:(parseInt(vari.pics.style.left,10)-vari.dir*vari.now*vari.width)/5;
+				vari.pics.style.left=parseInt(vari.pics.style.left,10)+vari.dir*vari.step+"px";
+			}
+			else if(parseInt(vari.pics.style.left,10)<-vari.dir*(vari.now-2)*vari.width&&vari.dir==1){
+				vari.step=(vari.step<2)?1:(-vari.dir*(vari.now-2)*vari.width-parseInt(vari.pics.style.left,10))/5;
+				vari.pics.style.left=parseInt(vari.pics.style.left,10)+vari.dir*vari.step+"px";
+			}
+			else{
+				vari.now=vari.now-vari.dir;
+				clearInterval(vari.begin);
+				vari.begin=null;
+				vari.step=5;
+				vari.width=960;
+			}
+		},
+		scr:function(){
+			if(parseInt(vari.span.style.top,10)>-31){
+				vari.span.style.top=parseInt(vari.span.style.top,10)-5+"px";
+			}
+			else{
+				clearInterval(vari.begin2);
+				vari.begin2=null;
+			}
+		},
+		stp:function(){
+			if(parseInt(vari.span2.style.top,10)<0){
+				vari.span2.style.top=parseInt(vari.span2.style.top,10)+10+"px";
+			}
+			else{
+				clearInterval(vari.end2);
+				vari.end2=null;
+			}
+		}
+	};
+	vari.prev.onclick=function(){
+		if(!vari.begin&&vari.now!=1){
+			vari.dir=1;
+			vari.begin=setInterval(vari.move,20);
+		}
+		else if(!vari.begin&&vari.now==1){
+			vari.dir=-1
+			vari.width*=vari.len-1;
+			vari.begin=setInterval(vari.move,20);
+		};
+	};
+	vari.next.onclick=function(){
+		if(!vari.begin&&vari.now!=vari.len){
+			vari.dir=-1;
+			vari.begin=setInterval(vari.move,20);
+		}
+		else if(!vari.begin&&vari.now==vari.len){
+			vari.dir=1
+			vari.width*=vari.len-1;
+			vari.begin=setInterval(vari.move,20);
+		};
+	};
+	for(var i=0;i<vari.intro.length;i++){
+		vari.intro[i].onmouseover=function(){
+			vari.span=this.getElementsByTagName("span")[0];
+			vari.span.style.top=0+"px";
+			if(vari.begin2){clearInterval(vari.begin2);}
+			vari.begin2=setInterval(vari.scr,20);
+		};
+		vari.intro[i].onmouseout=function(){
+			vari.span2=this.getElementsByTagName("span")[0];
+			if(vari.begin2){clearInterval(vari.begin2);}
+			if(vari.end2){clearInterval(vari.end2);}
+			vari.end2=setInterval(vari.stp,5);
+		};
+	}
+})();
+</SCRIPT>
+    
+    
+    
+</DIV>
+
+</div>
+</div>
+<div class="content">
+<div class="conleft">
+<h4><a href="#">博文</a></h4>
+<div class="bwtitle"><img src="images/4.jpg" /><a href="#">马来西亚教育联盟内容详解：私立高校级别资格分析</a>
+<span class="bktime">(2011-8-15 15:30)</span></div>
+<p class="bknr">回到比赛前的那一刻，当记者们拿到了本场比赛的名单时发现，王永珀(微博)又回到了替补席，如果这还是正常用人的话，郑铮(微博)回到替补席让所有人非常难以理解：在本赛季，郑铮基本是左后卫的主力，但在上一场客场对恒大时，郑铮被马季奇放在了中后卫的位置上，结果表现并不尽如人意，于是，郑铮这一场就从出场名单中消失了。这是一个让人非常惊讶的决定：如果郑铮是在左后卫位置表现不好，那么回到替补席非常正常，但郑铮是被马季奇放在中后卫位置上的，结果郑铮为马季奇的错误买单。
+回到比赛前的那一刻，当记者们拿到了本场比赛的名单时发现，王永珀(微博)又回到了替补席，如果这还是正常用人的话，郑铮(微博)回到替补席让所有人非常难以理解：在本赛季，郑铮基本是左后卫的主力，但在上一场客场对恒大时，郑铮被马季奇放在了中后卫的位置上，结果表现并不尽如人意，于是，郑铮这一场就从出场名单中消失了。这是一个让人非常惊讶的决定：如果郑铮是在左后卫位置表现不好，那么回到替补席非常正常，但郑铮是被马季奇放在中后卫位置上的，结果郑铮为马季奇的错误买单。</p>
+<div class="download"><span class="zhuanfa"> 转发：
+<a href="#"><img src="images/w1.jpg" /></a><a href="#"><img src="images/x1.jpg" /></a><a href="#"><img src="images/x2.jpg" /></a>
+<a href="#"><img src="images/x3.jpg" /></a>
+</span><span class="ckmore"> 阅读（325) |&nbsp;&nbsp; <a href="#">收藏（0）</a>&nbsp;&nbsp;<a href="#">查看全文>></a></span></div>
+<ul class="updown">
+<li><a href="#">上一篇：郑铮(微博)回到替补席让所有人</a></li>
+<li><a href="#">下一篇：郑铮(微博)回到替补席让所有人</a></li>
+</ul>
+<div class="mxfc"><a href="#">名校风采</a></div>
+<ul class="xytp">
+<li><img src="images/8.jpg" /><a href="#">英迪大学舒邦校区</a></li>
+<li><img src="images/8.jpg" /><a href="#">英迪大学舒邦校区</a></li>
+<li><img src="images/8.jpg" /><a href="#">英迪大学舒邦校区</a></li>
+<li><img src="images/8.jpg" /><a href="#">英迪大学舒邦校区</a></li>
+</ul>
+</div>
+<div class="conright">
+<div class="people"><a href="#">个人介绍</a></div>
+<ul class="jsnr">
+<li><img src="images/11.jpg" /><span class="teacher"><a href="#">资深咨询顾问李玲老师</a></span></li>
+<li class="jrtj"><span class="jrsc"><a href="#"><img src="images/9.jpg" /></a></span> <span class="tjhy"><a href="#"><img src="images/10.jpg" /></a></span></li>
+<li class="wt"><a href="#">专家答疑：1626</a></li>
+<li class="wt"><a href="#">留学评估：4</a></li>
+<li class="wt"><a href="#">留学面谈：0</a></li>
+<li class="wt"><a href="#">关注人气：12345678</a></li>
+</ul>
+<div class="kb"></div>
+<div class="white"></div>
+<div class="people"><a href="#">博文搜索</a></div>
+<div class="jsjj"><input name="" type="text" class="ssinput" /><img src="images/but2.jpg" />
+</div>
+<div class="white"></div>
+<div class="people"><a href="#">个人简介</a></div>
+<div class="jsjj">
+<p><strong>姓 名：</strong>资深咨询顾</p>
+<p><strong>电 话：</strong>资深咨询顾</p>
+<p><strong>所属部门：</strong>资深咨询顾：</p>
+<p><strong>E-mail：</strong>资深咨询顾</p>
+<p><strong>职 位：</strong>资深咨询顾：</p>
+<p><strong>QQ号码：</strong>资深咨询顾</p>
+<p><strong>工作感言：</strong>资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾</p>
+</div>
+<div class="white"></div>
+<div class="people"><a href="#">留学答疑</a></div>
+<ul class="wzfl">
+<li><a href="#">·您好，我在新加坡私立学院上完高级大专课程，请...<span class="time">（2011-09-11）</span></a></li>
+<li><a href="#">·您好，我在新加坡私立学院上完高级大专课程，请...<span class="time">（2011-09-11）</span></a></li>
+<li><a href="#">·您好，我在新加坡私立学院上完高级大专课程，请...<span class="time">（2011-09-11）</span></a></li>
+<li><a href="#">·您好，我在新加坡私立学院上完高级大专课程，请...<span class="time">（2011-09-11）</span></a></li>
+<li><a href="#">·您好，我在新加坡私立学院上完高级大专课程，请...<span class="time">（2011-09-11）</span></a></li>
+<li><a href="#">·您好，我在新加坡私立学院上完高级大专课程，请...<span class="time">（2011-09-11）</span></a></li>
+<li><a href="#">·您好，我在新加坡私立学院上完高级大专课程，请...<span class="time">（2011-09-11）</span></a></li>
+<li><a href="#">·您好，我在新加坡私立学院上完高级大专课程，请...<span class="time">（2011-09-11）</span></a></li>
+<li><a href="#">·您好，我在新加坡私立学院上完高级大专课程，请...<span class="time">（2011-09-11）</span></a></li>
+<li><a href="#">·您好，我在新加坡私立学院上完高级大专课程，请...<span class="time">（2011-09-11）</span></a></li>
+</ul>
+</div>
+</div>
+ <div id="footer">
+  <!--= footerNav -->
+  <!--= footerLinks -->
+  <div id="copyright">
+    <ul class="menu">
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">留学方案</a></li>
+      <li><a href="#">留学知道</a></li>
+      <li><a href="#">热门专业</a></li>
+      <li><a href="#">教育体系</a></li>
+      <li><a href="#">申请攻略</a></li>
+      <li><a href="#">院校图库</a></li>
+      <li><a href="#">留学专题</a></li>
+      <li><a href="#">咨询电话</a></li>
+      <li><a href="#">代理加盟</a></li>
+      <li><a href="#">院校合作</a></li>
+      <li><a href="#">投诉建议</a></li>
+      <li class="last"><a href="#">联系我们</a></li>
+    </ul>
+澳洲 021-51383716　美国 021-51383720　英国 021-51383797　新西兰 021-51383706　新加坡 021-51383776　马来西亚 021-51383718　爱尔兰 021-51383785    中介服务机构名称：上海华一国际教育咨询有限公司 资格认定编号：教外综资认字【2011】404号　法律顾问：
+     
+  <a href="#" target="_blank">国纲华辰律师事务所</a><a href="#" target="_blank">章乘光律师</a> 提醒：从事留学中介的网站若未经许可，请勿擅自应用本网内容，本站有权采取法律行动    Copyright &#169; 2005-2010 360 Edu Alliance Group,All right reserved    沪ICP备08008919号  </div>
+</div>
+</div>
+</body>
+</html>

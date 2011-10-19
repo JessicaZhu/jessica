@@ -48,7 +48,7 @@
 .college-list{
 	overflow:hidden;
 	border:1px solid #DCDDDD;
-	margin:0 0 0px 0;
+	margin:0 ;
 	padding:0;background:url(../images/bgt3.gif) top repeat-x;
 }
 
@@ -85,7 +85,7 @@
 	overflow:hidden;
 	display:block;
 	margin:0 8px;
-	padding:6px 0 6px 0px;
+	padding:6px 0 6px 0;
 	border-bottom:1px dotted #CCC;
 	width: 692px;
 }
@@ -137,7 +137,7 @@
 	overflow: hidden;
 }
 .container280 li{
-	margin:0px;
+	margin:0;
 }
 .collegename{
 	padding:4px;
@@ -157,19 +157,15 @@
 .topno{font-size:10px; color:white; padding:0 10px 0 4px; margin:auto 0 ; font-family:Arial}
 .topno10{font-size:10px; color:white; padding:0 10px 0 2px ; margin:auto 0; font-family:Arial}
 .top1-3{
-	padding-left: 0px;
-	padding: 2px ;
-	padding-right: 4px;
-	padding-bottom: 2px;
+
+	padding: 2px 4px 2px 0;
+
 	background-image: url(../images/top1-3.gif);
 	background-repeat: no-repeat;
 	background-position: 2px 8px;
 }
 .top4-10{
-	padding-left: 0px;
-	padding-top: 2px;
-	padding-right: 4px;
-	padding-bottom: 2px;
+	padding: 2px 4px 2px 0;
 	background-image: url(../images/top4-10.gif);
 	background-repeat: no-repeat;
 	background-position: 2px 6px;
@@ -179,18 +175,13 @@
 .top4-10 a{ font-size:12px; color:#333; text-decoration:none}
 .top4-10 a:hover{ color:#C00; text-decoration:underline}
 .topmajor{
-	/* [disabled]clear:both; */
-	/* [disabled]float:right; */
 	right:-1px;
 	width:86px;
 	height:79px;
 	top:-7px;
 	text-indent: -9999px;
-	/* [disabled]display:inline; */
-	/* [disabled]margin: -7px 0 0 -1px; */
 	z-index:2;
 	position: absolute;
 	background-image: url(../images/top_ribbon.png);
 	background-repeat: no-repeat;
-	background-position: right top;
-}
+	background-position: right top;}

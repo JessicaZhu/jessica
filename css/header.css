@@ -16,15 +16,7 @@ a:hover {color: #F00;}
 	display: block;
 	z-index: 8;
 }
-*html .header{
-	background: url(../images/1.jpg) repeat-x;
-	/* [disabled]height: 27px; */
-	width:1010px;
-	font-size:12px;
-	overflow: hidden; 
-	display: block;
-}
- .top {
+.top {
 	height: 22px;
 	width: 990px;
 	font-size: 12px;
@@ -61,7 +53,7 @@ a:hover {color: #F00;}
 	/* [disabled]overflow:hidden; */
 	margin-top: 95px;
 	width:1010px;
-	padding: 0 0 0 0px;
+	padding: 0;
 	/* [disabled]color: #FFF; */
 	height: 40px;
 }
@@ -70,7 +62,7 @@ a:hover {color: #F00;}
 	/* [disabled]overflow:hidden; */
 	margin-top: 10px;
 	width:1010px;
-	padding: 0 0 0 0px;
+	padding: 0 ;
 	/* [disabled]color: #FFF; */
 	height: 40px;
 }
@@ -184,15 +176,7 @@ ul.topnav li span.subhover { /*--Hover effect for trigger--*/
 	clear: both;
 	z-index: 12;
 }
-*html .navigation ul.subnav li{
-	/* [disabled]width: 150px; */
-	margin: 0;
-	padding: 0;
-	border-top: 1px solid #ffe5e5; /*--Create bevel effect--*/
-	/*--Create bevel effect--*/
-	clear: both;
-	z-index: 11;
-}
+
 *+html .navigation ul.subnav li{
 	/* [disabled]width: 150px; */
 	margin: 0;
@@ -260,7 +244,7 @@ ul.topnav li span.subhover { /*--Hover effect for trigger--*/
 }
 			#quickNav .menu .last{margin:0;}
 			#quickNav .menu li a{font-size:14px;font-weight:bold;}
-			#quickNav .menu li s{position:absolute;left:0;top:0;display:inline-block;*display:inline;zoom:1;height:16px;vertical-align:middle;}
+			#quickNav .menu li s{position:absolute;left:0;top:0;display:inline-block;*display:inline;}
 			#quickNav .menu .m1{ background:url(../images/qbtn1.gif) top left no-repeat;}
 			#quickNav .menu .m2 { background:url(../images/qbtn2.gif) top left no-repeat;}
 			#quickNav .menu .m3 { background:url(../images/qbtn3.gif) top left no-repeat;}

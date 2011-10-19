@@ -46,7 +46,7 @@
 	width:160px;
 	text-align:right;
 	padding:3px 0;
-	margin:0;
+
 	display: block;
 	float: left;
 	font-weight: bold;
@@ -182,7 +182,7 @@
 	list-style:none outside none;
 	padding:3px 0;
 	margin:0;
-	padding-left:18px;
+
 	height:18px;
 	display:block;
 	color: #000;

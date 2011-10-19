@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+
+<title>无标题文档</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="container">
+<div class="top">
+<span class="xfz"><img src="images/2.jpg" /></span>
+<span class="lxsy"><a href="#">留学首页</a>  <a href="#">网站地图</a> | <a href="#">诚聘</a> <a href="#">关于我们</a> <a href="#">联系我们</a> <a href="#"><span style="color:#FF0000">东方留学</span></a></span></div>
+<div class="beijing">
+<div class="flash">
+<div class="fpic">
+<div id="slider" class="slide-wp">
+<ul>
+<li><a href="http://www.cnblogs.com/hongru/" target="_blank"><img src="images/yx1.jpg" alt="" /></a></li>
+<li><a href="http://www.cnblogs.com/hongru/" target="_blank"><img src="http://images.cnblogs.com/cnblogs_com/hongru/264552/o_2.jpg"  alt="" /></a></li>
+<li><a href="http://www.cnblogs.com/hongru/" target="_blank"><img src="http://images.cnblogs.com/cnblogs_com/hongru/264552/o_3.jpg"  alt="" /></a></li>
+<li><a href="http://www.cnblogs.com/hongru/" target="_blank"><img src="http://images.cnblogs.com/cnblogs_com/hongru/264552/o_4.jpg"  alt="" /></a></li>
+<li><a href="http://www.cnblogs.com/hongru/" target="_blank"><img src="http://images.cnblogs.com/cnblogs_com/hongru/264552/o_5.jpg"  alt="" /></a></li>
+</ul>
+</div>
+<div class="nav-wp">
+<ul id="nav" class="nav">
+<li onClick="mySlider.pos(0)">●</li>
+<li onClick="mySlider.pos(1)">●</li>
+<li onClick="mySlider.pos(2)">●</li>
+<li onClick="mySlider.pos(3)">●</li>
+<li onClick="mySlider.pos(4)">●</li>
+</ul>
+<a class="next" onClick="mySlider.move()"></a></div>
+<script type="text/javascript">
+var HR = {
+ $ : function(i) {return document.getElementById(i)},
+ $$ : function(c, p) {return p.getElementsByTagName(c)},
+ ce : function(i, t) {
+  var o = document.createElement(i);
+  t.appendChild(o);
+  return o;
+ }
+};
+HR.slider3D = function () {
+ var init = function (o) {
+  this.o = o;
+  var wp = HR.$(o.id), ul = HR.$$('ul', wp)[0], li = this.li = HR.$$('li', ul);
+  this.l = li.length;
+  this.w = wp.offsetWidth;
+  this.h = wp.offsetHeight;
+  this.at = o.auto? o.auto : 4;
+  var con = this.con = HR.ce('div', wp);
+  con.style.cssText = 'position:absolute;left:0;top:0;width:'+this.w+'px;height:'+this.h+'px';
+  ul.style['display'] = 'none';  
+  this.a1 = HR.ce('a', con);  
+  this.a1.style.cssText = 'position:absolute;left:0;top:0;overflow:hidden';  
+  this.a2 = HR.ce('a', con);
+  this.a2.style.cssText = 'position:absolute;top:0;right:0;overflow:hidden';
+  this.a1.innerHTML = this.a2.innerHTML = '<img alt="" />';
+  this.img = HR.$$('img', ul);
+  this.s = o.maskSize ? o.maskSize : 5;
+  
+  this.mask11 = HR.ce('span', this.a1);
+  this.mask12 = HR.ce('span', this.a1);
+  this.mask21 = HR.ce('span', this.a2);
+  this.mask22 = HR.ce('span', this.a2);
+  
+  this.pos(0);
+ }
+ init.prototype = {
+  pos : function (i) {
+   clearInterval(this.li[i].a); clearInterval(this.au); this.au = 0; this.cur = i;
+   var navli = HR.$$('li', HR.$(this.o.navId));
+   for (var j=0; j<navli.length; j++) {
+    navli[j].className = i == j ? 'cur' : '';
+   }
+   var img1 = HR.$$('img', this.a1)[0], img2 = HR.$$('img', this.a2)[0], _this = this;
+   img1.src = i==0 ? this.img[this.l-1].src : this.img[i-1].src;
+   img1.width = this.w;
+   img2.src = this.img[i].src;
+   img2.width = 0;
+   img1.height = img2.height = this.h;
+   this.mask11.style.cssText = 'position:absolute;left:0;top:0;font-size:0;overflow:hidden;width:0;height:0;border-color:black transparent transparent black;border-style:solid dashed dashed solid;border-width:0 '+this.w/2+'px';
+   this.mask12.style.cssText = 'position:absolute;left:0;bottom:0;font-size:0;overflow:hidden;width:0;height:0;border-color:transparent transparent black black;border-style:dashed dashed solid solid;border-width:0 '+this.w/2+'px';
+   this.mask21.style.cssText = 'position:absolute;right:0;top:0;font-size:0;overflow:hidden;width:0;height:0;border-color:black black transparent transparent;border-style:solid solid dashed dashed;border-width:0px';
+   this.mask22.style.cssText = 'position:absolute;right:0;bottom:0;font-size:0;overflow:hidden;width:0;height:0;border-color:transparent black black transparent;border-style:dashed solid solid dashed;border-width:0px';
+   this.li[i].a = setInterval(function(){_this.anim(i)}, 20);
+  },
+  anim : function (i) {
+   var w1 = HR.$$('img', this.a1)[0].width, w2  = HR.$$('img', this.a2)[0].width;
+   if (w2 == this.w) {
+    clearInterval(this.li[i].a);
+    HR.$$('img', this.a1)[0].width = 0;
+    HR.$$('img', this.a2)[0].width = this.w;
+    this.mask11.style.borderLeftWidth = this.mask11.style.borderRightWidth = this.mask12.style.borderLeftWidth = this.mask12.style.borderRightWidth = '0px';
+    this.mask11.style.borderTopWidth = this.mask11.style.borderBottomWidth = this.mask12.style.borderTopWidth = this.mask12.style.borderBottomWidth = this.h/this.s + 'px';
+    this.mask21.style.borderLeftWidth = this.mask21.style.borderRightWidth = this.mask22.style.borderLeftWidth = this.mask22.style.borderRightWidth = this.w/2 + 'px';
+    this.mask21.style.borderTopWidth = this.mask21.style.borderBottomWidth = this.mask22.style.borderTopWidth = this.mask22.style.borderBottomWidth = '0px';
+   }else {
+    HR.$$('img', this.a1)[0].width -= Math.ceil((this.w-w2)*.13);
+    HR.$$('img', this.a2)[0].width += Math.ceil((this.w-w2)*.13);
+    this.mask11.style.borderLeftWidth = this.mask11.style.borderRightWidth = this.mask12.style.borderLeftWidth = this.mask12.style.borderRightWidth = HR.$$('img', this.a1)[0].width/2 + 'px';
+    this.mask11.style.borderTopWidth = this.mask11.style.borderBottomWidth = this.mask12.style.borderTopWidth = this.mask12.style.borderBottomWidth = HR.$$('img', this.a2)[0].width*this.h/(this.s*this.w) + 'px';
+    this.mask21.style.borderLeftWidth = this.mask21.style.borderRightWidth = this.mask22.style.borderLeftWidth = this.mask22.style.borderRightWidth = HR.$$('img', this.a2)[0].width/2 + 'px';
+    this.mask21.style.borderTopWidth = this.mask21.style.borderBottomWidth = this.mask22.style.borderTopWidth = this.mask22.style.borderBottomWidth = this.h/this.s - HR.$$('img', this.a2)[0].width*this.h/(this.s*this.w) + 'px';
+    if (!this.au) this.auto();
+   }
+  },
+  auto : function () {
+   var _this = this;
+   this.au = setInterval(function(){_this.move()}, this.at*1000);
+  },
+  move : function () {
+   var n = this.cur==this.l-1 ? 0 : this.cur+1;
+   this.pos(n);
+  }
+ }
+ return init;
+}();
+var mySlider = new HR.slider3D({
+ id: 'slider',
+ maskSize: 6,
+ navId: 'nav',
+ auto: 4
+})</script>
+
+</div>
+</div>
+<ul class="banner">
+<li><a href="#">首页</a></li>
+<li class="gx"></li>
+<li><a href="#">院校简介</a></li>
+<li class="gx"></li>
+<li><a href="#">院校新闻</a></li>
+<li class="gx"></li>
+<li><a href="#">关注度</a></li>
+<li class="gx"></li>
+<li><a href="#">在线报名</a></li>
+</ul>
+
+</div>
+<div class="content">
+<div class="conleft">
+<h4><a href="#">院校新闻</a></h4>
+<div class="bwtitle"><img src="images/4.jpg" /><a href="#">马来西亚教育联盟内容详解：私立高校级别资格分析</a>
+<span class="bktime">(2011-8-15 15:30)</span></div>
+<p class="bknr">回到比赛前的那一刻，当记者们拿到了本场比赛的名单时发现，王永珀(微博)又回到了替补席，如果这还是正常用人的话，郑铮(微博)回到替补席让所有人非常难以理解：在本赛季，郑铮基本是左后卫的主力，但在上一场客场对恒大时，郑铮被马季奇放在了中后卫的位置上，结果表现并不尽如人意，于是，郑铮这一场就从出场名单中消失了。这是一个让人非常惊讶的决定：如果郑铮是在左后卫位置表现不好，那么回到替补席非常正常，但郑铮是被马季奇放在中后卫位置上的，结果郑铮为马季奇的错误买单。
+回到比赛前的那一刻，当记者们拿到了本场比赛的名单时发现，王永珀(微博)又回到了替补席，如果这还是正常用人的话，郑铮(微博)回到替补席让所有人非常难以理解：在本赛季，郑铮基本是左后卫的主力，但在上一场客场对恒大时，郑铮被马季奇放在了中后卫的位置上，结果表现并不尽如人意，于是，郑铮这一场就从出场名单中消失了。这是一个让人非常惊讶的决定：如果郑铮是在左后卫位置表现不好，那么回到替补席非常正常，但郑铮是被马季奇放在中后卫位置上的，结果郑铮为马季奇的错误买单。</p>
+<div class="download"><span class="zhuanfa">转发：
+<a href="#"><img src="images/w1.jpg" border="0"/></a><a href="#"><img src="images/x1.jpg" border="0"/></a><a href="#"><img src="images/x2.jpg" border="0"/></a>
+<a href="#"><img src="images/x3.jpg" border="0"/></a>
+</span><span class="ckmore"> 阅读（325) |&nbsp;&nbsp; <a href="#">收藏（0）</a>&nbsp;&nbsp;<a href="#">查看全文>></a></span></div>
+
+<ul class="updown">
+<li><a href="#">上一篇：郑铮(微博)回到替补席让所有人</a></li>
+<li><a href="#">下一篇：郑铮(微博)回到替补席让所有人</a></li>
+</ul>
+<div class="mxfc"><a href="#">名校风采</a></div>
+<ul class="xytp">
+<li><img src="images/8.jpg" /><a href="#">英迪大学舒邦校区</a></li>
+<li><img src="images/8.jpg" /><a href="#">英迪大学舒邦校区</a></li>
+<li><img src="images/8.jpg" /><a href="#">英迪大学舒邦校区</a></li>
+<li><img src="images/8.jpg" /><a href="#">英迪大学舒邦校区</a></li>
+</ul>
+</div>
+<div class="conright">
+<div class="people"><a href="#">院校人物志</a></div>
+<ul class="jsnr">
+<li><img src="images/11.jpg" /><span class="teacher"><a href="#">xxxx院长</a></span></li>
+<li class="jrtj"><span class="jrsc"><a href="#"><img src="images/9.jpg" /></a></span> <span class="tjhy"><a href="#"><img src="images/10.jpg" /></a></span>
+</li>
+<li class="wt"><a href="#">专家答疑：1626</a></li>
+<li class="wt"><a href="#">留学评估：4</a></li>
+<li class="wt"><a href="#">留学面谈：0</a></li>
+<li class="wt"><a href="#">关注人气：12345678</a></li>
+</ul>
+<div class="kb"></div>
+<div class="white"></div>
+<div class="people"><a href="#">博文搜索</a></div>
+<div class="jsjj"><input name="" type="text" class="ssinput" /><img src="images/but2.jpg" />
+</div>
+<div class="white"></div>
+<div class="people"><a href="#">院校简介</a></div>
+<div class="jsjj">
+<p><strong>院校名称：</strong>资深咨询顾</p>
+<p><strong>学院类型：</strong>资深咨询顾</p>
+<p><strong>建校时间：</strong>资深咨询顾：</p>
+<p><strong>学生人数：</strong>资深咨询顾</p>
+<p><strong>院校地址：</strong>资深咨询顾：</p>
+<p><strong>官方网站：</strong>资深咨询顾</p>
+<p><strong>院校简介：</strong>资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾资深咨询顾</p>
+</div>
+<div class="white"></div>
+<div class="people"><a href="#">学院设置</a></div>
+<ul class="wzfl">
+<li><a href="#">·文学院</a></li>
+<li><a href="#">·法学院</a></li>
+<li><a href="#">·艺术学院</a></li>
+<li><a href="#">·商学院</a></li>
+<li><a href="#">·本科申请（15）</a></li>
+<li><a href="#">·本科申请（15）</a></li>
+<li><a href="#">·本科申请（15）</a></li>
+<li><a href="#">·本科申请（15）</a></li>
+<li><a href="#">·本科申请（15）</a></li>
+<li><a href="#">·本科申请（15）</a></li>
+</ul>
+</div>
+</div>
+ <div id="footer">
+  <!--= footerNav -->
+  <!--= footerLinks -->
+  <div id="copyright">
+    <ul class="menu">
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">留学方案</a></li>
+      <li><a href="#">留学知道</a></li>
+      <li><a href="#">热门专业</a></li>
+      <li><a href="#">教育体系</a></li>
+      <li><a href="#">申请攻略</a></li>
+      <li><a href="#">院校图库</a></li>
+      <li><a href="#">留学专题</a></li>
+      <li><a href="#">咨询电话</a></li>
+      <li><a href="#">代理加盟</a></li>
+      <li><a href="#">院校合作</a></li>
+      <li><a href="#">投诉建议</a></li>
+      <li class="last"><a href="#">联系我们</a></li>
+    </ul>
+澳洲 021-51383716　美国 021-51383720　英国 021-51383797　新西兰 021-51383706　新加坡 021-51383776　马来西亚 021-51383718　爱尔兰 021-51383785    中介服务机构名称：上海华一国际教育咨询有限公司 资格认定编号：教外综资认字【2011】404号　法律顾问：
+     
+  <a href="#" target="_blank">国纲华辰律师事务所</a><a href="#" target="_blank">章乘光律师</a> 提醒：从事留学中介的网站若未经许可，请勿擅自应用本网内容，本站有权采取法律行动    Copyright &#169; 2005-2010 360 Edu Alliance Group,All right reserved    沪ICP备08008919号  </div>
+</div>
+</div>
+</body>
+</html>

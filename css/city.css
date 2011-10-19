@@ -5,7 +5,7 @@
 	overflow:hidden;
 	margin:0 auto;
 	padding:0;
-	font:  Arial, "宋体";
+	font:  Arial;
 	display: block;
 }
 ul{list-style:none outside none;
@@ -119,7 +119,7 @@ ul{list-style:none outside none;
 .college-list{
 	overflow:hidden;
 	border:1px solid #DCDDDD;
-	margin:0 0 0px 0;
+	margin:0 0 0 0;
 	padding:0;background:url(../images/bgt3.gif) top repeat-x;
 }
 
@@ -346,7 +346,7 @@ ul{list-style:none outside none;
 	width:340px;
 	overflow: hidden;
 	padding: 4px;
-	float: tight;
+	float: right;
 }
 .img{ padding:1px; border:1px solid #CCC; float:left; }
 .cb-content{
@@ -476,7 +476,7 @@ ul{list-style:none outside none;
 .topno{font-size:10px; color:white; padding:3px 10px 0 4px; margin:auto 0 ; font-family:Arial; float:left}
 .topno10{font-size:10px; color:white; padding:3px 10px 0 2px ; margin:auto 0; font-family:Arial; float:left}
 .top1-3{
-	padding-left: 0px;
+	padding-left: 0;
 	padding-top: 2px ;
 	padding-right: 4px;
 	padding-bottom: 2px;
@@ -540,10 +540,10 @@ ul{list-style:none outside none;
 /*- edu_item -*/
 
 		/* e_list_logo */
-.e_list_logo{float:left;width:135px;zoom:1;}
-.e_list_logo li{margin:0 0 4px;zoom:1;}
+.e_list_logo{float:left;width:135px;}
+.e_list_logo li{margin:0 0 4px;}
 .e_list_logo li img{display:block;margin:0 0 6px;padding:1px;border:1px solid #dcdddd;}
- .e_list_logo li a{
+.e_list_logo li a{
 	display:block;
 	text-align:center;
 	line-height:1.6em;

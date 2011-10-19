@@ -7,7 +7,7 @@
 	height:230px;
 	/* [disabled]margin:6px 6px 6px 0; */
 	float: right;
-	white-space: 400;
+
 }
  .photo img{
 	display:block;
@@ -16,7 +16,7 @@
 }
 	.school_detail .detail{overflow:hidden;height:290px;background:#fff;border:1px solid #ddd;}
 	.school_detail_list{
-	padding:0px;
+	padding:0;
 	font-size: 12px;
 }
 	.school_detail_list li{line-height:1.9em;}
@@ -60,18 +60,18 @@
 }
 	.school_info .btn .last{margin-right:0;}
 	.school_info .btn a{display:block;height:25px;text-indent:-9999px;}
-	.school_info .btn .btn_ass{background-position:0 0; background:url(../images/btn_bg.png) no-repeat}
-	.school_info .btn .btn_consu{background-position:0 -25px; background:url(../images/btn_bg.png) no-repeat}
-	.school_info .btn .btn_app{background-position:0 -50px; background:url(../images/btn_bg.png) no-repeat}
+	.school_info .btn .btn_ass{ background:url(../images/btn_bg.png) no-repeat}
+	.school_info .btn .btn_consu{ background:url(../images/btn_bg.png) no-repeat 0 -25px}
+	.school_info .btn .btn_app{ background:url(../images/btn_bg.png) no-repeat 0 -50px}
 	/*- school_extra -*/
-	.school_info .school_extra{overflow:hidden;zoom:1;padding:11px 0 0 0;background-position:0 top;}
+	.school_info .school_extra{overflow:hidden;padding:11px 0 0 0;background-position:0 top;}
 	.school_info .school_extra .attention{
 	float:left;
 	font-size: 16px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 	.school_info .school_extra .attention strong{color:#b60000;font-size:20px;}
-	.school_info .school_extra .btn_fav{float:right;text-indent:-9999px;width:72px;height:26px; background:url(../images/btn_bg.png) no-repeat;background-position:0 -75px;}
+	.school_info .school_extra .btn_fav{float:right;text-indent:-9999px;width:72px;height:26px; background:url(../images/btn_bg.png) no-repeat 0 -75px;}
 .re-content{
 	font-size:12px;
 	height: 95px;
@@ -82,29 +82,16 @@
 .re-name a{ color:#C00; font-weight:bold; text-decoration:none}
 .re-name a:hover{ text-decoration:underline;}
 .re-destination { display:block; padding-bottom:5px;color:#666; font-weight:bold; }
-*html #lists {
-	padding:0 0 0 260px;
-	margin:10px 0;
-	list-style:none;
-	position:relative;
-	height:0;
-	background-color:#3C6BD0;
-	background:url(../images/btn_bg.png) no-repeat;
-	/* [disabled]overflow:hidden; */
-	background-position:0 -101px;
-	width:750px;
-	
-} 
+
 #lists {
 	padding:0 0 0 260px;
-	margin:10px 0;
+	margin:10px auto;
 	list-style:none;
 	position:relative;
-	background-color:#3C6BD0;
-	background:url(../images/btn_bg.png) no-repeat;
-	
-	background-position:0 -101px;
+	background:url(../images/btn_bg.png) no-repeat 0 -101px #3C6BD0;
 	width:750px;
+    overflow: visible;
+    height: 32px
 
 } 
 /* margins for this demonstration only */
@@ -130,7 +117,7 @@
 	font-size:16px;
 	font-weight:bold;
 	text-indent:10px;
-	font-weight:normal;
+
 	color:#FFF;
 	background-color: #3C6BD0;
 }
@@ -143,7 +130,7 @@
 	font-size:16px;
 	font-weight:bold;
 	text-indent:10px;
-	font-weight:normal;
+
 	color:#FFF;
 	background-color: #3C6BD0;
 }
@@ -175,7 +162,6 @@
 
 #lists :hover div dl {display:inline; padding:0; margin:0 10px 10px 10px; float:left; width:129px;}
 #lists :hover div dl dt {width:129px; background:#888; text-indent:10px; margin:5px 0 10px 0; text-decoration:none; height:20px; line-height:20px;}
-*html #lists :hover div dl dt {width:129px; background:#888; text-indent:10px; margin:5px 0 10px 0; text-decoration:none; height:0; line-height:20px;}
 #lists .two:hover div {left:-150px;}
 #lists .two:hover div dl {width:129px;}
 #lists .two:hover div dl dt {width:129px;}
